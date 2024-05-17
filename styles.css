@@ -1,0 +1,33 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css';
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+section {
+    scroll-margin-top: 100px;
+    /* Adjust if you have a fixed navbar */
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background: #1f2937;
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
