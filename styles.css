@@ -31,3 +31,14 @@ footer {
         gap: 2rem;
     }
 }
+
+#nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(31, 41, 55, 0.95);
+    padding: 1rem 0;
+}

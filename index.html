@@ -9,10 +9,15 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white flex flex-col min-h-screen">
-    <nav class="bg-gray-800 p-4 shadow-lg">
+    <nav class="bg-gray-800 bg-opacity-70 p-4 shadow-lg fixed w-full z-20">
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="text-white text-2xl font-bold">Portafolio</a>
-            <ul class="flex space-x-4">
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <ul id="nav-menu" class="hidden lg:flex space-x-4">
                 <li><a href="index.html" class="text-white hover:text-gray-400 transition duration-300">Principal</a></li>
                 <li><a href="portafolio.html" class="text-white hover:text-gray-400 transition duration-300">Portafolio</a></li>
                 <li><a href="blog.html" class="text-white hover:text-gray-400 transition duration-300">Blog</a></li>
@@ -20,7 +25,7 @@
         </div>
     </nav>
 
-    <main class="flex-grow relative">
+    <main class="flex-grow relative mt-16">
         <div id="particles-js" class="absolute inset-0 z-0"></div>
         <section id="home" class="h-screen flex items-center justify-center relative z-10">
             <div class="text-center p-6 max-w-4xl mx-auto animate__animated animate__fadeIn">
