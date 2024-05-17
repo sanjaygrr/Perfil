@@ -334,6 +334,11 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             "retina_detect": true
         });
+
+        // Recargar los embeds de Instagram cuando el DOM esté completamente cargado
+        if (window.instgrm) {
+            window.instgrm.Embeds.process();
+        }
     }
 
     const links = document.querySelectorAll('nav a');
