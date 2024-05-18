@@ -8,34 +8,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="source/img/logo.webp" type="image/webp">
-    <style>
-        .icon {
-            font-size: 2.5rem;
-            color: white;
-        }
-        .icon-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            margin: 50px auto 0; /* Adds margin at the top to separate from text */
-        }
-        .icon-container div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform-origin: center center;
-            animation: rotate 10s linear infinite;
-        }
-        .icon-container a {
-            display: block;
-            width: 50px;
-            height: 50px;
-        }
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-    </style>
 </head>
 <body class="bg-black text-white flex flex-col min-h-screen">
     <nav class="bg-gray-800 bg-opacity-70 p-4 shadow-lg fixed w-full z-20">
@@ -56,13 +28,13 @@
     </nav>
 
     <main class="flex-grow relative mt-16">
-        <div id="particles-js" class="absolute inset-0 z-0"></div>
         <section id="contacto" class="py-20 relative z-10 text-center">
             <div class="container mx-auto mb-12">
                 <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">¡Contáctame!</h2>
                 <p class="text-xl mb-8">Presiona el ícono de la red social que quieres entrar</p>
             </div>
-            <div class="icon-container z-0">
+            <div class="icon-container z-10">
+                <div id="plasma-ball" class="plasma-ball"></div>
                 <div style="transform: rotate(0deg);">
                     <a href="https://www.instagram.com/sanjaygrr/" style="transform: rotate(0deg) translate(150px);"><i class="fab fa-instagram icon"></i></a>
                 </div>
@@ -89,7 +61,80 @@
         &copy; 2024 Portafolio de Sanjay. Todos los derechos reservados.
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="index.js"></script>
+    <script>
+        // Plasma ball effect
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000); // Ensure aspect ratio is 1 for a perfect circle
+        const renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(300, 300); // Adjusted size for better visibility
+        document.getElementById('plasma-ball').appendChild(renderer.domElement);
+
+        const geometry = new THREE.SphereGeometry(1, 32, 32);
+        const material = new THREE.ShaderMaterial({
+            uniforms: {
+                time: { value: 1.0 }
+            },
+            vertexShader: `
+                varying vec3 vUv; 
+
+                void main() {
+                    vUv = position; 
+
+                    vec4 modelViewPosition = modelViewMatrix * vec4(position, 1.0);
+                    gl_Position = projectionMatrix * modelViewPosition;
+                }
+            `,
+            fragmentShader: `
+                uniform float time;
+                varying vec3 vUv;
+
+                void main() {
+                    vec3 color = vec3(0.5 + 0.5 * cos(time + vUv.x * 10.0), 0.5 + 0.5 * cos(time + vUv.y * 10.0), 0.5 + 0.5 * cos(time + vUv.z * 10.0));
+                    gl_FragColor = vec4(color, 1.0);
+                }
+            `,
+            wireframe: true
+        });
+        const sphere = new THREE.Mesh(geometry, material);
+        scene.add(sphere);
+
+        camera.position.z = 2.5;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            sphere.rotation.x += 0.01;
+            sphere.rotation.y += 0.01;
+            material.uniforms.time.value += 0.05;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Bouncing effect for the plasma ball
+        const plasmaBall = document.getElementById('plasma-ball');
+        let x = 0, y = 0;
+        let dx = 2, dy = 2;
+
+        function moveBall() {
+            const rect = plasmaBall.getBoundingClientRect();
+            const parentRect = plasmaBall.parentElement.getBoundingClientRect();
+
+            if (rect.left + dx < parentRect.left || rect.right + dx > parentRect.right) {
+                dx = -dx;
+            }
+            if (rect.top + dy < parentRect.top || rect.bottom + dy > parentRect.bottom) {
+                dy = -dy;
+            }
+
+            x += dx;
+            y += dy;
+            plasmaBall.style.transform = `translate(${x}px, ${y}px)`;
+
+            requestAnimationFrame(moveBall);
+        }
+
+        moveBall();
+    </script>
 </body>
 </html>

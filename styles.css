@@ -53,14 +53,14 @@ footer {
     width: 400px;
     height: 400px;
     margin: 50px auto 0;
-    /* Adds margin at the top to separate from text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-container div {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform-origin: center center;
+    transform-origin: center;
     animation: rotate 10s linear infinite;
 }
 
@@ -68,6 +68,13 @@ footer {
     display: block;
     width: 50px;
     height: 50px;
+}
+
+#plasma-ball {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 0;
 }
 
 @keyframes rotate {
@@ -78,4 +85,34 @@ footer {
     to {
         transform: rotate(360deg);
     }
+}
+
+@keyframes lineAnimation {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.line {
+    display: none;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.plasma-ball {
+    animation: bounce 2s infinite;
 }
