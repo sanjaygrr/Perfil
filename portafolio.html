@@ -9,10 +9,15 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white flex flex-col min-h-screen">
-    <nav class="bg-gray-800 p-4 shadow-lg">
+    <nav class="bg-gray-800 bg-opacity-70 p-4 shadow-lg fixed w-full z-20">
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="text-white text-2xl font-bold">Portafolio</a>
-            <ul class="flex space-x-4">
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <ul id="nav-menu" class="hidden lg:flex space-x-4">
                 <li><a href="index.html" class="text-white hover:text-gray-400 transition duration-300">Principal</a></li>
                 <li><a href="portafolio.html" class="text-white hover:text-gray-400 transition duration-300">Portafolio</a></li>
                 <li><a href="blog.html" class="text-white hover:text-gray-400 transition duration-300">Blog</a></li>
@@ -20,33 +25,88 @@
         </div>
     </nav>
 
-    <main class="flex-grow relative">
+    <main class="flex-grow relative mt-16">
         <div id="particles-js" class="absolute inset-0 z-0"></div>
         <section id="portafolio" class="py-20 relative z-10">
             <div class="container mx-auto text-center">
                 <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInDown">Mi Portafolio</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card">
-                        <img src="https://via.placeholder.com/300" alt="Proyecto 1" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Proyecto 1</h3>
-                        <p class="text-gray-300">Descripción del proyecto 1.</p>
+                    <!-- Proyecto 1 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card">
+                        <img src="source/img/calendar.png" alt="Conversor-Calendar-to-Excel" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Conversor Calendar to Excel</h3>
+                        <p class="text-gray-300">Convierte archivos de calendario en formato iCalendar (.ics) a Excel (.xlsx).</p>
+                        <a href="https://github.com/sanjaygrr/Conversor-Calendar-to-Excel" class="text-blue-500 hover:underline">Ver proyecto</a>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.2s;">
-                        <img src="https://via.placeholder.com/300" alt="Proyecto 2" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Proyecto 2</h3>
-                        <p class="text-gray-300">Descripción del proyecto 2.</p>
+                    <!-- Proyecto 2 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.2s;">
+                        <img src="source/img/eltablazo.png" alt="EL_Tablazo" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">EL Tablazo</h3>
+                        <p class="text-gray-300">Página web para una tienda ficticia usando Django, HTML, Bootstrap y JS.</p>
+                        <a href="https://github.com/sanjaygrr/EL_Tablazo" class="text-blue-500 hover:underline">Ver proyecto</a>
                     </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.4s;">
-                        <img src="https://via.placeholder.com/300" alt="Proyecto 3" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Proyecto 3</h3>
-                        <p class="text-gray-300">Descripción del proyecto 3.</p>
+                    <!-- Proyecto 3 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.4s;">
+                        <img src="source/img/gato3d.png" alt="Gato3D" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Gato3D</h3>
+                        <p class="text-gray-300">Juego del gato en 3D desarrollado en Python.</p>
+                        <a href="https://github.com/sanjaygrr/Gato3D" class="text-blue-500 hover:underline">Ver proyecto</a>
+                    </div>
+                    <!-- Proyecto 4 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.6s;">
+                        <img src="source/img/comparadorexcels.png" alt="ComparadorExcels" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Comparador de Excels</h3>
+                        <p class="text-gray-300">Comparador de archivos Excel desarrollado en Python.</p>
+                        <a href="https://github.com/sanjaygrr/ComparadorExcels" class="text-blue-500 hover:underline">Ver proyecto</a>
+                    </div>
+                    <!-- Proyecto 5 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.8s;">
+                        <img src="source/img/Australia.png" alt="Weather_Analisis" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Weather Analisis</h3>
+                        <p class="text-gray-300">Análisis del clima en Australia durante un tiempo junto a diferentes métodos de análisis de variables.</p>
+                        <a href="https://github.com/sanjaygrr/Weather_Analisis" class="text-blue-500 hover:underline">Ver proyecto</a>
+                    </div>
+                    <!-- Proyecto 6 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 1s;">
+                        <img src="source/img/googleclone.png" alt="GoogleClone" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">GoogleClone</h3>
+                        <p class="text-gray-300">Un clon de Google creado para prácticas de desarrollo web.</p>
+                        <a href="https://github.com/sanjaygrr/GoogleClone" class="text-blue-500 hover:underline">Ver proyecto</a>
+                    </div>
+                    <!-- Proyecto 7 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 1.2s;">
+                        <img src="source/img/biobanco.png" alt="Biobanco" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Biobanco</h3>
+                        <p class="text-gray-300">Sistema de administración de usuarios, espacios, muestras y envíos para biobancos.</p>
+                        <a href="https://github.com/sanjaygrr/Biobanco" class="text-blue-500 hover:underline">Ver proyecto</a>
+                    </div>
+                    <!-- Proyecto 8 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 1.4s;">
+                        <img src="source/img/registraap.png" alt="Registraap" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Registraap</h3>
+                        <p class="text-gray-300">Aplicación móvil creada en Ionic para programación de aplicaciones móviles DUOC 2021.</p>
+                        <a href="https://github.com/sanjaygrr/Registraap" class="text-blue-500 hover:underline">Ver proyecto</a>
+                    </div>
+                    <!-- Proyecto 9 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 2s;">
+                        <img src="source/img/lexsistem.png" alt="LexSistem" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">LexSistem</h3>
+                        <p class="text-gray-300">Trabajo de ingeniería de software.</p>
+                        <a href="https://github.com/sanjaygrr/LexSistem" class="text-blue-500 hover:underline">Ver proyecto</a>
+                    </div>
+                    <!-- Proyecto 10 -->
+                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 2.2s;">
+                        <img src="source/img/simondice.png"alt="Simon-dice" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Simon Dice</h3>
+                        <p class="text-gray-300">Juego Simon dice en JavaScript.</p>
+                        <a href="https://github.com/sanjaygrr/Simon-dice" class="text-blue-500 hover:underline">Ver proyecto</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800 py-6 text-center text-white">
+    <footer class="bg-gray-800 bg-opacity-70 py-6 text-center text-white">
         &copy; 2024 Portafolio de Sanjay. Todos los derechos reservados.
     </footer>
 
