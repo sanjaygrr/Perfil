@@ -113,26 +113,33 @@
 
         // Bouncing effect for the plasma ball
         const plasmaBall = document.getElementById('plasma-ball');
-        let x = 0, y = 0;
-        let dx = 2, dy = 2;
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random() * window.innerHeight;
+        let dx = 2;
+        let dy = 2;
 
         function moveBall() {
-            const rect = plasmaBall.getBoundingClientRect();
-            const parentRect = plasmaBall.parentElement.getBoundingClientRect();
+            const ballWidth = plasmaBall.offsetWidth;
+            const ballHeight = plasmaBall.offsetHeight;
 
-            if (rect.left + dx < parentRect.left || rect.right + dx > parentRect.right) {
+            if (x + dx > window.innerWidth - ballWidth || x + dx < 0) {
                 dx = -dx;
             }
-            if (rect.top + dy < parentRect.top || rect.bottom + dy > parentRect.bottom) {
+            if (y + dy > window.innerHeight - ballHeight || y + dy < 0) {
                 dy = -dy;
             }
 
             x += dx;
             y += dy;
-            plasmaBall.style.transform = `translate(${x}px, ${y}px)`;
+            plasmaBall.style.left = x + 'px';
+            plasmaBall.style.top = y + 'px';
 
             requestAnimationFrame(moveBall);
         }
+
+        plasmaBall.style.position = 'fixed';
+        plasmaBall.style.left = x + 'px';
+        plasmaBall.style.top = y + 'px';
 
         moveBall();
     </script>
