@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Sanjay - Contacto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="source/img/logo.webp" type="image/webp">
+    <style>
+        .icon {
+            font-size: 2.5rem;
+            color: white;
+        }
+        .icon-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin: 50px auto 0; /* Adds margin at the top to separate from text */
+        }
+        .icon-container div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center center;
+            animation: rotate 10s linear infinite;
+        }
+        .icon-container a {
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-black text-white flex flex-col min-h-screen">
+    <nav class="bg-gray-800 bg-opacity-70 p-4 shadow-lg fixed w-full z-20">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold">Portafolio</a>
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <ul id="nav-menu" class="hidden lg:flex space-x-4">
+                <li><a href="index.html" class="text-white hover:text-gray-400 transition duration-300">Principal</a></li>
+                <li><a href="portafolio.html" class="text-white hover:text-gray-400 transition duration-300">Portafolio</a></li>
+                <li><a href="blog.html" class="text-white hover:text-gray-400 transition duration-300">Blog</a></li>
+                <li><a href="contacto.html" class="text-white hover:text-gray-400 transition duration-300">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow relative mt-16">
+        <div id="particles-js" class="absolute inset-0 z-0"></div>
+        <section id="contacto" class="py-20 relative z-10 text-center">
+            <div class="container mx-auto mb-12">
+                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">¡Contáctame!</h2>
+                <p class="text-xl mb-8">Presiona el ícono de la red social que quieres entrar</p>
+            </div>
+            <div class="icon-container z-0">
+                <div style="transform: rotate(0deg);">
+                    <a href="https://www.instagram.com/sanjaygrr/" style="transform: rotate(0deg) translate(150px);"><i class="fab fa-instagram icon"></i></a>
+                </div>
+                <div style="transform: rotate(60deg);">
+                    <a href="https://github.com/sanjaygrr" style="transform: rotate(-60deg) translate(150px);"><i class="fab fa-github icon"></i></a>
+                </div>
+                <div style="transform: rotate(120deg);">
+                    <a href="https://twitter.com/sanjaygrr" style="transform: rotate(-120deg) translate(150px);"><i class="fab fa-twitter icon"></i></a>
+                </div>
+                <div style="transform: rotate(180deg);">
+                    <a href="https://linkedin.com/in/sanjaygrr" style="transform: rotate(-180deg) translate(150px);"><i class="fab fa-linkedin icon"></i></a>
+                </div>
+                <div style="transform: rotate(240deg);">
+                    <a href="mailto:sanjaygr@gmail.com" style="transform: rotate(-240deg) translate(150px);"><i class="fas fa-envelope icon"></i></a>
+                </div>
+                <div style="transform: rotate(300deg);">
+                    <a href="https://wa.me/971077170" style="transform: rotate(-300deg) translate(150px);"><i class="fab fa-whatsapp icon"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 bg-opacity-70 py-6 text-center text-white">
+        &copy; 2024 Portafolio de Sanjay. Todos los derechos reservados.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

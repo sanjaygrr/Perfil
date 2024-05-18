@@ -42,3 +42,40 @@ footer {
     background: rgba(31, 41, 55, 0.95);
     padding: 1rem 0;
 }
+
+.icon {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.icon-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto 0;
+    /* Adds margin at the top to separate from text */
+}
+
+.icon-container div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    animation: rotate 10s linear infinite;
+}
+
+.icon-container a {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
