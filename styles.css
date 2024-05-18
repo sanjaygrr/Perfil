@@ -2,8 +2,9 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-    /* Para evitar que aparezcan barras de desplazamiento */
+    overflow: auto;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 nav ul {
@@ -72,7 +73,9 @@ footer {
     height: 50px;
 }
 
-#plasma-ball {
+#plasma-ball,
+#pyramid,
+#cube {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -101,4 +104,28 @@ footer {
 
 .line {
     display: none;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.plasma-ball,
+.shape {
+    width: 100px;
+    height: 100px;
+    animation: bounce 5s infinite;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
 }
