@@ -8,6 +8,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="source/img/logo.webp" type="image/webp">
+    <style>
+        .language-selector span {
+            cursor: pointer;
+            margin: 0 5px;
+            font-weight: normal;
+        }
+        .language-selector .selected {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body class="bg-black text-white flex flex-col min-h-screen">
     <nav class="bg-gray-800 bg-opacity-70 p-4 shadow-lg fixed w-full z-20">
@@ -18,10 +28,12 @@
                 </button>
             </div>
             <ul id="nav-menu" class="hidden lg:flex w-full justify-end space-x-8">
-                <li class="flex-grow text-center"><a href="index.html" class="text-white hover:text-blue-500 transition duration-300">Principal</a></li>
-                <li class="flex-grow text-center"><a href="portafolio.html" class="text-white hover:text-blue-500 transition duration-300">Portafolio</a></li>
-                <!-- <li class="flex-grow text-center"><a href="blog.html" class="text-white hover:text-blue-500 transition duration-300">Blog</a></li> -->
-                <li class="flex-grow text-center"><a href="contacto.html" class="text-white hover:text-blue-500 transition duration-300">Contacto</a></li>
+                <li class="flex-grow text-center"><a href="index.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Home" data-es="Principal">Principal</a></li>
+                <li class="flex-grow text-center"><a href="portafolio.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Portfolio" data-es="Portafolio">Portafolio</a></li>
+                <li class="flex-grow text-center"><a href="contacto.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Contact" data-es="Contacto">Contacto</a></li>
+                <li class="language-selector">
+                    <span id="eng" class="selected" data-en="Eng" data-es="Eng">Eng</span>/<span id="esp" data-en="Esp" data-es="Esp">Esp</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -29,8 +41,8 @@
     <main class="flex-grow relative mt-16">
         <section id="contacto" class="py-20 relative z-10 text-center">
             <div class="container mx-auto mb-12">
-                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">¡Contáctame!</h2>
-                <p class="text-xl mb-8">Presiona el ícono de la red social que quieres entrar</p>
+                <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown" data-en="Contact Me!" data-es="¡Contáctame!">¡Contáctame!</h2>
+                <p class="text-xl mb-8" data-en="Click the social media icon you want to enter" data-es="Presiona el ícono de la red social que quieres entrar">Presiona el ícono de la red social que quieres entrar</p>
             </div>
             <div class="icon-container z-10">
                 <div id="plasma-ball" class="plasma-ball"></div>
@@ -57,7 +69,7 @@
     </main>
 
     <footer class="bg-gray-800 bg-opacity-70 py-6 text-center text-white">
-        &copy; 2024 Portafolio de Sanjay. Todos los derechos reservados.
+        &copy; 2024 Sanjay's Portfolio. All rights reserved.
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -141,6 +153,24 @@
         plasmaBall.style.top = y + 'px';
 
         moveBall();
+
+        // Language toggle script
+        document.getElementById('eng').addEventListener('click', function () {
+            setLanguage('en');
+        });
+
+        document.getElementById('esp').addEventListener('click', function () {
+            setLanguage('es');
+        });
+
+        function setLanguage(lang) {
+            const isEnglish = lang === 'en';
+            document.querySelectorAll('[data-en], [data-es]').forEach(el => {
+                el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-es');
+            });
+            document.getElementById('eng').classList.toggle('selected', isEnglish);
+            document.getElementById('esp').classList.toggle('selected', !isEnglish);
+        }
     </script>
 </body>
 </html>

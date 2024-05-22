@@ -8,6 +8,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="source/img/logo.webp" type="image/webp">
+    <style>
+        .language-selector span {
+            cursor: pointer;
+            margin: 0 5px;
+            font-weight: normal;
+        }
+        .language-selector .selected {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body class="bg-black text-white flex flex-col min-h-screen">
     <nav class="bg-gray-800 bg-opacity-70 p-4 shadow-lg fixed w-full z-20">
@@ -18,10 +28,12 @@
                 </button>
             </div>
             <ul id="nav-menu" class="hidden lg:flex w-full justify-end space-x-8">
-                <li class="flex-grow text-center"><a href="index.html" class="text-white hover:text-blue-500 transition duration-300">Principal</a></li>
-                <li class="flex-grow text-center"><a href="portafolio.html" class="text-white hover:text-blue-500 transition duration-300">Portafolio</a></li>
-                <!-- <li class="flex-grow text-center"><a href="blog.html" class="text-white hover:text-blue-500 transition duration-300">Blog</a></li> -->
-                <li class="flex-grow text-center"><a href="contacto.html" class="text-white hover:text-blue-500 transition duration-300">Contacto</a></li>
+                <li class="flex-grow text-center"><a href="index.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Home" data-es="Principal">Principal</a></li>
+                <li class="flex-grow text-center"><a href="portafolio.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Portfolio" data-es="Portafolio">Portafolio</a></li>
+                <li class="flex-grow text-center"><a href="contacto.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Contact" data-es="Contacto">Contacto</a></li>
+                <li class="language-selector">
+                    <span id="eng" class="selected" data-en="Eng" data-es="Eng">Eng</span>/<span id="esp" data-en="Esp" data-es="Esp">Esp</span>
+                </li>
             </ul>
         </div>
     </nav>
@@ -30,101 +42,98 @@
         <div id="particles-js" class="absolute inset-0 z-0"></div>
         <section id="portafolio" class="py-20 relative z-10 text-center">
             <div class="container mx-auto mb-12">
-                <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInDown">Mi Portafolio</h2>
-                <p class="text-xl mb-8">Aquí puedes ver algunos de mis trabajos. Haz clic en los enlaces para obtener más información sobre cada uno de ellos.</p>
+                <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInDown" data-en="My Portfolio" data-es="Mi Portafolio">Mi Portafolio</h2>
+                <p class="text-xl mb-8" data-en="Here you can see some of my projects. Click on the links to learn more about each one." data-es="Aquí puedes ver algunos de mis trabajos. Haz clic en los enlaces para obtener más información sobre cada uno de ellos.">Aquí puedes ver algunos de mis trabajos. Haz clic en los enlaces para obtener más información sobre cada uno de ellos.</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-
-
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card">
                         <img src="source/img/Juegos_de_Coordinacion_con_Guante.png" alt="Portafolio/Blog" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Juegos de Coordinacion con Guante</h3>
-                        <p class="text-gray-300">Juegos de Coordinación con Guante" es una colección de juegos para mejorar la destreza manual mediante el uso de un guante especial.</p>
-                        <a href="https://github.com/sanjaygrr/Guante" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Coordination Games with Glove" data-es="Juegos de Coordinacion con Guante">Juegos de Coordinacion con Guante</h3>
+                        <p class="text-gray-300" data-en="Coordination Games with Glove is a collection of games to improve manual dexterity using a special glove." data-es="Juegos de Coordinación con Guante es una colección de juegos para mejorar la destreza manual mediante el uso de un guante especial.">Juegos de Coordinación con Guante es una colección de juegos para mejorar la destreza manual mediante el uso de un guante especial.</p>
+                        <a href="https://github.com/sanjaygrr/Guante" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
 
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card">
                         <img src="source/img/perfil.png" alt="Portafolio/Blog" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Portafolio/Blog</h3>
-                        <p class="text-gray-300">Esta misma pagina en la que estas navegando</p>
-                        <a href="https://github.com/sanjaygrr/Perfil" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Portfolio/Blog" data-es="Portafolio/Blog">Portafolio/Blog</h3>
+                        <p class="text-gray-300" data-en="This is the same page you are browsing" data-es="Esta misma pagina en la que estas navegando">Esta misma pagina en la que estas navegando</p>
+                        <a href="https://github.com/sanjaygrr/Perfil" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 1 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card">
                         <img src="source/img/calendar.png" alt="Conversor-Calendar-to-Excel" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Conversor Calendar to Excel</h3>
-                        <p class="text-gray-300">Convierte archivos de calendario en formato iCalendar (.ics) a Excel (.xlsx).</p>
-                        <a href="https://github.com/sanjaygrr/Conversor-Calendar-to-Excel" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Calendar to Excel Converter" data-es="Conversor Calendar to Excel">Conversor Calendar to Excel</h3>
+                        <p class="text-gray-300" data-en="Converts calendar files in iCalendar (.ics) format to Excel (.xlsx)." data-es="Convierte archivos de calendario en formato iCalendar (.ics) a Excel (.xlsx).">Convierte archivos de calendario en formato iCalendar (.ics) a Excel (.xlsx).</p>
+                        <a href="https://github.com/sanjaygrr/Conversor-Calendar-to-Excel" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 2 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.2s;">
                         <img src="source/img/eltablazo.png" alt="EL_Tablazo" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">EL Tablazo</h3>
-                        <p class="text-gray-300">Página web para una tienda ficticia usando Django, HTML, Bootstrap y JS.</p>
-                        <a href="https://github.com/sanjaygrr/EL_Tablazo" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="EL Tablazo" data-es="EL Tablazo">EL Tablazo</h3>
+                        <p class="text-gray-300" data-en="Website for a fictional store using Django, HTML, Bootstrap, and JS." data-es="Página web para una tienda ficticia usando Django, HTML, Bootstrap y JS.">Página web para una tienda ficticia usando Django, HTML, Bootstrap y JS.</p>
+                        <a href="https://github.com/sanjaygrr/EL_Tablazo" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 3 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.4s;">
                         <img src="source/img/gato3d.png" alt="Gato3D" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Gato3D</h3>
-                        <p class="text-gray-300">Juego del gato en 3D desarrollado en Python.</p>
-                        <a href="https://github.com/sanjaygrr/Gato3D" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Gato3D" data-es="Gato3D">Gato3D</h3>
+                        <p class="text-gray-300" data-en="3D Tic-Tac-Toe game developed in Python." data-es="Juego del gato en 3D desarrollado en Python.">Juego del gato en 3D desarrollado en Python.</p>
+                        <a href="https://github.com/sanjaygrr/Gato3D" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 4 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.6s;">
                         <img src="source/img/comparadorexcels.png" alt="ComparadorExcels" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Comparador de Excels</h3>
-                        <p class="text-gray-300">Comparador de archivos Excel desarrollado en Python.</p>
-                        <a href="https://github.com/sanjaygrr/ComparadorExcels" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Excel Comparator" data-es="Comparador de Excels">Comparador de Excels</h3>
+                        <p class="text-gray-300" data-en="Excel file comparator developed in Python." data-es="Comparador de archivos Excel desarrollado en Python.">Comparador de archivos Excel desarrollado en Python.</p>
+                        <a href="https://github.com/sanjaygrr/ComparadorExcels" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 5 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 0.8s;">
                         <img src="source/img/Australia.png" alt="Weather_Analisis" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Weather Analisis</h3>
-                        <p class="text-gray-300">Análisis del clima en Australia durante un tiempo junto a diferentes métodos de análisis de variables.</p>
-                        <a href="https://github.com/sanjaygrr/Weather_Analisis" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Weather Analysis" data-es="Weather Analisis">Weather Analisis</h3>
+                        <p class="text-gray-300" data-en="Weather analysis in Australia over time using various variable analysis methods." data-es="Análisis del clima en Australia durante un tiempo junto a diferentes métodos de análisis de variables.">Análisis del clima en Australia durante un tiempo junto a diferentes métodos de análisis de variables.</p>
+                        <a href="https://github.com/sanjaygrr/Weather_Analisis" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 6 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 1s;">
                         <img src="source/img/googleclone.png" alt="GoogleClone" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">GoogleClone</h3>
-                        <p class="text-gray-300">Un clon de Google creado para prácticas de desarrollo web.</p>
-                        <a href="https://github.com/sanjaygrr/GoogleClone" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Google Clone" data-es="GoogleClone">GoogleClone</h3>
+                        <p class="text-gray-300" data-en="A Google clone created for web development practice." data-es="Un clon de Google creado para prácticas de desarrollo web.">Un clon de Google creado para prácticas de desarrollo web.</p>
+                        <a href="https://github.com/sanjaygrr/GoogleClone" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 7 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 1.2s;">
                         <img src="source/img/biobanco.png" alt="Biobanco" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Biobanco</h3>
-                        <p class="text-gray-300">Sistema de administración de usuarios, espacios, muestras y envíos para biobancos.</p>
-                        <a href="https://github.com/sanjaygrr/Biobanco" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Biobank" data-es="Biobanco">Biobanco</h3>
+                        <p class="text-gray-300" data-en="User, space, sample, and shipment management system for biobanks." data-es="Sistema de administración de usuarios, espacios, muestras y envíos para biobancos.">Sistema de administración de usuarios, espacios, muestras y envíos para biobancos.</p>
+                        <a href="https://github.com/sanjaygrr/Biobanco" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 8 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 1.4s;">
                         <img src="source/img/registraap.png" alt="Registraap" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Registraap</h3>
-                        <p class="text-gray-300">Aplicación móvil creada en Ionic para programación de aplicaciones móviles DUOC 2021.</p>
-                        <a href="https://github.com/sanjaygrr/Registraap" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Registraap" data-es="Registraap">Registraap</h3>
+                        <p class="text-gray-300" data-en="Mobile app created in Ionic for DUOC 2021 mobile application programming." data-es="Aplicación móvil creada en Ionic para programación de aplicaciones móviles DUOC 2021.">Aplicación móvil creada en Ionic para programación de aplicaciones móviles DUOC 2021.</p>
+                        <a href="https://github.com/sanjaygrr/Registraap" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
 
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card">
                         <img src="source/img/cosaspython.png" alt="CosasPython" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Cosas Python</h3>
-                        <p class="text-gray-300">Programas que hice cuando estaba aprendiendo python, podria servirle a alguien tiene varios ejercicios</p>
-                        <a href="https://github.com/sanjaygrr/Cosas-python" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="Python Things" data-es="Cosas Python">Cosas Python</h3>
+                        <p class="text-gray-300" data-en="Programs I made when I was learning Python, could be useful to someone, it has various exercises." data-es="Programas que hice cuando estaba aprendiendo python, podria servirle a alguien tiene varios ejercicios">Programas que hice cuando estaba aprendiendo python, podria servirle a alguien tiene varios ejercicios</p>
+                        <a href="https://github.com/sanjaygrr/Cosas-python" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 9 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 2s;">
                         <img src="source/img/lexsistem.png" alt="LexSistem" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">LexSistem</h3>
-                        <p class="text-gray-300">Trabajo de ingeniería de software.</p>
-                        <a href="https://github.com/sanjaygrr/LexSistem" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <h3 class="text-2xl font-bold mb-2" data-en="LexSistem" data-es="LexSistem">LexSistem</h3>
+                        <p class="text-gray-300" data-en="Software engineering project." data-es="Trabajo de ingeniería de software.">Trabajo de ingeniería de software.</p>
+                        <a href="https://github.com/sanjaygrr/LexSistem" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                     <!-- Proyecto 10 -->
                     <div class="bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 animate__animated animate__zoomIn project-card" style="animation-delay: 2.2s;">
-                        <img src="source/img/simondice.png"alt="Simon-dice" class="rounded-t-lg mb-4">
-                        <h3 class="text-2xl font-bold mb-2">Simon Dice</h3>
-                        <p class="text-gray-300">Juego Simon dice en JavaScript.</p>
-                        <a href="https://github.com/sanjaygrr/Simon-dice" class="text-blue-500 hover:underline">Ver proyecto</a>
+                        <img src="source/img/simondice.png" alt="Simon-dice" class="rounded-t-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2" data-en="Simon Says" data-es="Simon Dice">Simon Dice</h3>
+                        <p class="text-gray-300" data-en="Simon says game in JavaScript." data-es="Juego Simon dice en JavaScript.">Juego Simon dice en JavaScript.</p>
+                        <a href="https://github.com/sanjaygrr/Simon-dice" class="text-blue-500 hover:underline" data-en="View project" data-es="Ver proyecto">Ver proyecto</a>
                     </div>
                 </div>
             </div>
@@ -132,11 +141,30 @@
     </main>
 
     <footer class="bg-gray-800 bg-opacity-70 py-6 text-center text-white">
-        &copy; 2024 Portafolio de Sanjay. Todos los derechos reservados.
+        &copy; 2024 Sanjay's Portfolio. All rights reserved.
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <script src="index.js"></script>
+    <script>
+        // Language toggle script
+        document.getElementById('eng').addEventListener('click', function () {
+            setLanguage('en');
+        });
+
+        document.getElementById('esp').addEventListener('click', function () {
+            setLanguage('es');
+        });
+
+        function setLanguage(lang) {
+            const isEnglish = lang === 'en';
+            document.querySelectorAll('[data-en], [data-es]').forEach(el => {
+                el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-es');
+            });
+            document.getElementById('eng').classList.toggle('selected', isEnglish);
+            document.getElementById('esp').classList.toggle('selected', !isEnglish);
+        }
+    </script>
 </body>
 </html>
