@@ -3,48 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Inicio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="source/img/logo.webp" type="image/webp">
-    <style>
-        .language-selector span {
-            cursor: pointer;
-            margin: 0 5px;
-            font-weight: normal;
-        }
-        .language-selector .selected {
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body class="bg-black text-white flex flex-col min-h-screen">
     <nav class="bg-gray-800 bg-opacity-70 p-4 shadow-lg fixed w-full z-20">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-12 lg:px-24">
             <div class="block lg:hidden">
                 <button id="nav-toggle" class="text-white focus:outline-none">
                     <i class="fas fa-bars fa-2x"></i>
                 </button>
             </div>
-            <ul id="nav-menu" class="hidden lg:flex w-full justify-end space-x-8">
-                <li class="flex-grow text-center"><a href="index.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Home" data-es="Principal">Principal</a></li>
-                <li class="flex-grow text-center"><a href="portafolio.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Portfolio" data-es="Portafolio">Portafolio</a></li>
-                <li class="flex-grow text-center"><a href="contacto.html" class="text-white hover:text-blue-500 transition duration-300" data-en="Contact" data-es="Contacto">Contacto</a></li>
-                <li class="language-selector">
-                    <span id="eng" class="selected" data-en="Eng" data-es="Eng">Eng</span>/<span id="esp" data-en="Esp" data-es="Esp">Esp</span>
-                </li>
+            <ul id="nav-menu" class="lg:flex hidden w-full justify-around items-center">
+                <li class="text-center"><a href="index.html" class="text-white hover:text-blue-500 transition duration-300 block p-2 rounded-lg">Home</a></li>
+                <li class="text-center"><a href="portafolio.html" class="text-white hover:text-blue-500 transition duration-300 block p-2 rounded-lg">Portfolio</a></li>
+                <li class="text-center"><a href="contacto.html" class="text-white hover:text-blue-500 transition duration-300 block p-2 rounded-lg">Contact</a></li>
             </ul>
+            <div class="language-selector">
+                <div class="checkbox-wrapper-41">
+                    <input type="checkbox" id="language-switch" data-text="Eng">
+                </div>
+            </div>
         </div>
     </nav>
 
-    <main class="flex-grow relative mt-16">
+    <main class="flex-grow relative mt-16 px-4 md:px-12 lg:px-24">
         <section id="contacto" class="py-20 relative z-10 text-center">
             <div class="container mx-auto mb-12">
                 <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown" data-en="Contact Me!" data-es="¡Contáctame!">¡Contáctame!</h2>
                 <p class="text-xl mb-8" data-en="Click the social media icon you want to enter" data-es="Presiona el ícono de la red social que quieres entrar">Presiona el ícono de la red social que quieres entrar</p>
             </div>
-            <div class="icon-container z-10">
+            <div class="icon-container z-10 relative flex justify-center items-center">
                 <div id="plasma-ball" class="plasma-ball"></div>
                 <div style="transform: rotate(0deg);">
                     <a href="https://www.instagram.com/sanjaygrr/" style="transform: rotate(0deg) translate(150px);"><i class="fab fa-instagram icon"></i></a>
@@ -65,11 +57,34 @@
                     <a href="https://wa.me/971077170" style="transform: rotate(-300deg) translate(150px);"><i class="fab fa-whatsapp icon"></i></a>
                 </div>
             </div>
+            <!-- Hamster div outside of the rotating icons container -->
+            <div class="hamster-container">
+                <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+                    <div class="wheel"></div>
+                    <div class="hamster">
+                        <div class="hamster__body">
+                            <div class="hamster__head">
+                                <div class="hamster__ear"></div>
+                                <div class="hamster__eye"></div>
+                                <div class="hamster__nose"></div>
+                            </div>
+                            <div class="hamster__limb hamster__limb--fr"></div>
+                            <div class="hamster__limb hamster__limb--fl"></div>
+                            <div class="hamster__limb hamster__limb--br"></div>
+                            <div class="hamster__limb hamster__limb--bl"></div>
+                            <div class="hamster__tail"></div>
+                        </div>
+                    </div>
+                    <div class="spoke"></div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="bg-gray-800 bg-opacity-70 py-6 text-center text-white">
-        &copy; 2024 Sanjay's Portfolio. All rights reserved.
+        <div class="container mx-auto px-4 md:px-12 lg:px-24">
+            &copy; 2024 Sanjay's Portfolio. All rights reserved.
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -155,22 +170,15 @@
         moveBall();
 
         // Language toggle script
-        document.getElementById('eng').addEventListener('click', function () {
-            setLanguage('en');
-        });
-
-        document.getElementById('esp').addEventListener('click', function () {
-            setLanguage('es');
-        });
-
-        function setLanguage(lang) {
-            const isEnglish = lang === 'en';
-            document.querySelectorAll('[data-en], [data-es]').forEach(el => {
-                el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-es');
+        document.getElementById('language-switch').addEventListener('change', function() {
+            const isChecked = this.checked;
+            const elements = document.querySelectorAll('[data-en], [data-es]');
+            elements.forEach(el => {
+                const text = isChecked ? el.getAttribute('data-es') : el.getAttribute('data-en');
+                el.textContent = text;
             });
-            document.getElementById('eng').classList.toggle('selected', isEnglish);
-            document.getElementById('esp').classList.toggle('selected', !isEnglish);
-        }
+            this.setAttribute('data-text', isChecked ? 'Esp' : 'Eng');
+        });
     </script>
 </body>
 </html>
