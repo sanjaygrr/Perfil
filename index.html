@@ -1,846 +1,2499 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanjay Ramchandani</title>
-
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!-- custom css link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-</head>
-
-<body>
-
-  <!-- #MAIN -->
-  <main>
-
-<!-- #SIDEBAR -->
-<aside class="sidebar" data-sidebar>
-  <div class="sidebar-info">
-    <figure class="avatar-box">
-      <img src="./assets/images/my-avatar.png" alt="Sanjay Ramchandani" width="80">
-    </figure>
-
-    <div class="info-content">
-      <h1 class="name" title="Sanjay Ramchandani">Sanjay <br> Ramchandani</h1>
-      <p class="title">Software Developer / Data Engineer</p>
-    </div>
-
-    <button class="info_more-btn" data-sidebar-btn>
-      <span>Show Contacts</span>
-      <ion-icon name="chevron-down"></ion-icon>
-    </button>
-  </div>
-
-  <div class="sidebar-info_more">
-    <div class="separator"></div>
-
-    <ul class="contacts-list">
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="mail-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Email</p>
-          <a href="mailto:sanjaygr@gmail.com" class="contact-link">sanjaygr@gmail.com</a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="phone-portrait-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Phone</p>
-          <a href="tel:+56971077170" class="contact-link">+56 9 7107 7170</a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="calendar-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Birthday</p>
-          <time datetime="1995-10-10">January 14, 1997</time>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="location-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Location</p>
-          <address>Pune, India</address>
-        </div>
-      </li>
-    </ul>
-
-    <div class="separator"></div>
-
-    <ul class="social-list">
-      <li class="social-item">
-        <a href="https://www.instagram.com/sanjaygrr/" class="social-link">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="https://github.com/sanjaygrr" class="social-link">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="https://twitter.com/sanjaygrr" class="social-link">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-      </li>
-      <li class="social-item">
-        <a href="https://linkedin.com/in/sanjaygrr" class="social-link">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </li>
-    </ul>
-  </div>
-</aside>
-
-
-
-    <!-- #main-content -->
-    <div class="main-content">
-
-      <!-- #NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link="about">About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="resume">Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link="contact">Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-<!-- #ABOUT -->
-<article class="about active" data-page="about">
-  <header>
-    <h2 class="h2 article-title">About me</h2>
-  </header>
-  <section class="about-text">
-    <p>
-      I'm a Software Developer from Santiago, Chile, specialized in mobile app development. I have been hired to automate administrative processes and develop mobile apps. Currently, I am working for TriCiclos on the AppRe project, which is an app using React Native, Ruby on Rails, and Heroku. Additionally, I have worked on various other projects.
-    </p>
-    <p>
-      My job is to develop functional, efficient, and visually appealing software solutions. I bring a personal touch to each project, ensuring a unique and user-centric design. I have experience working with various companies to create innovative web and mobile applications.
-    </p>
-  </section>
-
-
-  <!-- service -->
-  <section class="service">
-    <h3 class="h3 service-title">What I'm doing</h3>
-    <ul class="service-list">
-      <li class="service-item">
-        <div class="service-icon-box">
-          <i class='bx bx-code-alt'></i>
-        </div>
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Web development</h4>
-          <p class="service-item-text">
-            High-quality development of websites at the professional level.
-          </p>
-        </div>
-      </li>
-      <li class="service-item">
-        <div class="service-icon-box">
-          <i class='bx bx-mobile-alt'></i>
-        </div>
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Mobile apps</h4>
-          <p class="service-item-text">
-            Professional development of applications for iOS and Android.
-          </p>
-        </div>
-      </li>
-      <li class="service-item">
-        <div class="service-icon-box">
-          <i class='bx bx-paint'></i>
-        </div>
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">UI/UX design</h4>
-          <p class="service-item-text">
-            Creating user-friendly and visually appealing designs.
-          </p>
-        </div>
-      </li>
-      <li class="service-item">
-        <div class="service-icon-box">
-          <i class='bx bx-line-chart'></i>
-        </div>
-        <div class="service-content-box">
-          <h4 class="h4 service-item-title">Data Analysis</h4>
-          <p class="service-item-text">
-            Conducting comprehensive data analysis to drive business decisions.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <!-- testimonials modal -->
-  <div class="modal-container" data-modal-container>
-    <div class="overlay" data-overlay></div>
-    <section class="testimonials-modal">
-      <button class="modal-close-btn" data-modal-close-btn>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-      <div class="modal-img-wrapper">
-        <figure class="modal-avatar-box">
-          <img src="./assets/images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
-        </figure>
-        <img src="./assets/images/icon-quote.svg" alt="quote icon">
-      </div>
-      <div class="modal-content">
-        <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
-        <time datetime="2021-06-14">14 June, 2021</time>
-        <div data-modal-text>
-          <p>
-            Sanjay was hired to create a corporate identity. We were very pleased with the work done. He has a
-            lot of experience and is very concerned about the needs of the client.
-          </p>
-        </div>
-      </div>
-    </section>
-  </div>
-</article>
-
-
-
-<!-- #RESUME -->
-<article class="resume" data-page="resume">
-  <header>
-    <h2 class="h2 article-title">Resume</h2>
-  </header>
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="book-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Education</h3>
-    </div>
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">University of Concepción - Concepción, Chile</h4>
-        <span>2016 — 2019</span>
-        <p class="timeline-text">
-          During my 3 years studying physics, I completed courses in Calculus I, II, & III, Mechanical Physics, Electromagnetism, and Thermodynamics. These courses provided me with a strong foundation in mathematical analysis and a deep understanding of fundamental physical principles. However, due to limited job opportunities in the field, I decided to pivot my career path. During this period, I discovered my aptitude for working with computers and developed a strong interest in information technology, leading me to pursue a degree in this field.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Duoc UC Professional Institute - Santiago, Chile</h4>
-        <span>2020 — 2023</span>
-        <p class="timeline-text">
-          During my 4-year degree, I gained comprehensive knowledge in web programming, databases, IT requirements analysis and planning, and software quality. I learned to design and develop web applications, manage and optimize both SQL and NoSQL databases, translate business needs into technical specifications, and ensure software quality through rigorous testing and quality assurance practices. This well-rounded education has equipped me with the technical expertise and analytical skills necessary to excel in various IT roles.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Platzi - Online</h4>
-        <span>2018 — Present</span>
-        <p class="timeline-text">
-          Continuous learning in programming and technology through various courses. Platzi has been an essential resource, providing up-to-date and relevant content that has kept me current with the latest trends and practices in the field.
-        </p>
-      </li>
-    </ol>
-  </section>
-  <section class="timeline">
-    <div class="title-wrapper">
-      <div class="icon-box">
-        <ion-icon name="briefcase-outline"></ion-icon>
-      </div>
-      <h3 class="h3">Experience</h3>
-    </div>
-    <ol class="timeline-list">
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Software Developer - AppRe, TriCiclos S.A. - Remote</h4>
-        <span>November 2022 — Present</span>
-        <p class="timeline-text">
-          At TriCiclos S.A., I have been a versatile developer, taking on multiple roles to ensure the success of our projects. I worked on optimizing and creating functions for the "AppRe," available on Play Store, App Store, and AppGallery. My responsibilities included developing and maintaining the app's functionalities, conducting QA tests, designing user interfaces, developing and maintaining the website, providing technical support, managing push notifications, interacting with users, deploying and managing backend services, and assisting the company's support team with tasks unrelated to the app.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Software Developer - DailyReport, AudioBras SPA - Remote</h4>
-        <span>2023 — Present</span>
-        <p class="timeline-text">
-          This ongoing project is a management system designed to oversee heavy machinery in northern Chile. Its purpose is to facilitate the organization, tracking, and control of machines, providing a centralized tool that helps companies optimize their daily operations. The system continues to evolve to meet the specific needs of the industry.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Lead Software Developer - "Shazam de Pajaritos," Pajaritos APP - Concepción, Chile</h4>
-        <span>2023 — Present</span>
-        <p class="timeline-text">
-          This mobile application, developed in collaboration with a team from the University of Concepción, is designed to identify birds through audio recordings. The project aims to provide an innovative tool that allows users to quickly and accurately recognize birds by their songs. The development follows an agile methodology, enabling the team to adapt and continuously improve the application.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Software Engineer - Calendar to Exe - Santiago, Chile</h4>
-        <span>July 2023</span>
-        <p class="timeline-text">
-          This desktop program was developed to manage taxis, reservations, and tours at a hotel in Santiago, Chile. The program provides an efficient solution for organizing and managing these activities, streamlining the planning and control of daily operations at the hotel.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Operation Analyst - Providencia Hostel, Santiago, Chile</h4>
-        <span>February 2022 — November 2022</span>
-        <p class="timeline-text">
-          At Providencia Hostel, I had the opportunity to grow and apply both my soft and professional skills. My responsibilities included organizing and managing reservations, handling purchases from suppliers, coordinating the logistics of different teams, assessing and addressing the needs of the hostel, managing payment collections, and overseeing the economic organization to ensure the financial health of the hostel.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Software Developer - Biobank, Laboratory U de Chile</h4>
-        <span>March 2019 — November 2022</span>
-        <p class="timeline-text">
-          This system, a thesis project from DuocUC, was developed to manage biological samples in a laboratory at the University of Chile. It facilitates the tracking, organization, and handling of samples, ensuring efficient management and accurate record-keeping in the laboratory environment.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Online Education Coordinator and Instructor - Profegram, Remote</h4>
-        <span>January 2020 — May 2022</span>
-        <p class="timeline-text">
-          During the pandemic, I conducted online classes through the Profegram platform, teaching subjects such as physics, mathematics, and algebra. Additionally, I coordinated other classes with teachers from various countries. This role enhanced my ability to adapt to remote teaching environments, manage diverse schedules, and collaborate effectively with international educators.
-        </p>
-      </li>
-      <li class="timeline-item">
-        <h4 class="h4 timeline-item-title">Software Developer - RegistrApp, Duoc UC</h4>
-        <span>July 2018 — November 2018</span>
-        <p class="timeline-text">
-          This application was developed as part of a student project for DuocUC, with the purpose of digitizing and optimizing student attendance records. The project provided a practical solution that enhanced the efficiency of attendance management and data storage within the educational environment.
-        </p>
-      </li>
-    </ol>
-  </section>
-
-
-  <section class="skill">
-    <h3 class="h3 skills-title">My Skills</h3>
-    <ul class="skills-list content-card">
-      
-      <!-- Frontend Development -->
-      <h4 class="h4" style="text-decoration: underline; margin-top: 0px;">FRONTEND DEVELOPMENT</h4>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">HTML, CSS, JS</h5>
-          <data value="80">95%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 95%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">React Native</h5>
-          <data value="70">95%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 95%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Vue.JS</h5>
-          <data value="30">50%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 50%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Expo</h5>
-          <data value="50">70%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 70%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Ionic</h5>
-          <data value="75">75%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 75%;"></div>
-        </div>
-      </li>
-  
-      <!-- Backend Development -->
-      <h4 class="h4" style="text-decoration: underline; margin-top: 20px;">BACKEND DEVELOPMENT</h4>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Django</h5>
-          <data value="75">75%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 75%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Ruby on Rails</h5>
-          <data value="60">60%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 60%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Python</h5>
-          <data value="90">100%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 100%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Fortran</h5>
-          <data value="40">40%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 40%;"></div>
-        </div>
-      </li>
-      <!-- Cloud Services -->
-      <h4 class="h4" style="text-decoration: underline; margin-top: 20px;">CLOUD SERVICES</h4>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">AWS</h5>
-          <data value="30">50%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 50%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">GCP</h5>
-          <data value="40">40%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 40%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Heroku</h5>
-          <data value="50">70%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 70%;"></div>
-        </div>
-      </li>
-  
-      <!-- Databases -->
-      <h4 class="h4" style="text-decoration: underline; margin-top: 20px;">DATABASES</h4>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">SQL</h5>
-          <data value="50">70%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 70%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">PostgresSQL</h5>
-          <data value="50">70%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 70%;"></div>
-        </div>
-      </li>
-  
-      <!-- DevOps & Tools -->
-      <h4 class="h4" style="text-decoration: underline; margin-top: 20px;">DEVOPS & TOOLS</h4>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Github & Git</h5>
-          <data value="95">95%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 95%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Figma</h5>
-          <data value="40">60%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 60%;"></div>
-        </div>
-      </li>
-  
-      <!-- CSS Frameworks -->
-      <h4 class="h4" style="text-decoration: underline; margin-top: 20px;">CSS FRAMEWORKS</h4>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Bootstrap</h5>
-          <data value="60">60%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 60%;"></div>
-        </div>
-      </li>
-      <li class="skills-item">
-        <div class="title-wrapper">
-          <h5 class="h5">Tailwind CSS</h5>
-          <data value="70">70%</data>
-        </div>
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" style="width: 70%;"></div>
-        </div>
-      </li>
-    </ul>
-  </section>
-  
-</article>
-
-
-<!-- #PORTFOLIO -->
-<article class="portfolio" data-page="portfolio">
-  <header>
-    <h2 class="h2 article-title">Portfolio</h2>
-  </header>
-  <section class="projects">
-    <ul class="filter-list">
-      <li class="filter-item">
-        <button class="active" data-filter-btn="All">All</button>
-      </li>
-      <li class="filter-item">
-        <button data-filter-btn="Web design">Web Development</button>
-      </li>
-      <li class="filter-item">
-        <button data-filter-btn="Applications">Applications</button>
-      </li>
-      <li class="filter-item">
-        <button data-filter-btn="Web development">Software development</button>
-      </li>
-      <li class="filter-item">
-        <button data-filter-btn="Data science">Data Science</button>
-      </li>
-    </ul>
-    <div class="filter-select-box">
-      <button class="filter-select" data-select>
-        <div class="select-value" data-select-value>Select category</div>
-        <div class="select-icon">
-          <ion-icon name="chevron-down"></ion-icon>
-        </div>
-      </button>
-      <ul class="select-list">
-        <li class="select-item">
-          <button data-select-item="All">All</button>
-        </li>
-        <li class="select-item">
-          <button data-select-item="Web development">Web development</button>
-        </li>
-        <li class="select-item">
-          <button data-select-item="Applications">Applications</button>
-        </li>
-        <li class="select-item">
-          <button data-select-item="Software development">Software development</button>
-        </li>
-        <li class="select-item">
-          <button data-filter-btn="Data science">Data Science</button>
-        </li>
-
-      </ul>
-    </div>
-    <ul class="project-list">
-      <li class="project-item active" data-filter-item="Software development">
-        <a href="https://github.com/sanjaygrr/Guante">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/Juegos_de_Coordinacion_con_Guante.png" alt="Coordination Games with Glove" loading="lazy">
-          </figure>
-          <h3 class="project-title">Coordination Games with Glove</h3>
-          <p class="project-category">Software development</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Web Development">
-        <a href="https://github.com/sanjaygrr/Perfil">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/perfil.png" alt="Portfolio/Blog" loading="lazy">
-          </figure>
-          <h3 class="project-title">Portfolio/Blog</h3>
-          <p class="project-category">Web Development</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Data science">
-        <a href="https://github.com/sanjaygrr/Conversor-Calendar-to-Excel">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/calendar.png" alt="Calendar to Excel Converter" loading="lazy">
-          </figure>
-          <h3 class="project-title">Calendar to Excel Converter</h3>
-          <p class="project-category">Data Science</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Web development">
-        <a href="https://github.com/sanjaygrr/EL_Tablazo">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/eltablazo.png" alt="EL Tablazo" loading="lazy">
-          </figure>
-          <h3 class="project-title">EL Tablazo</h3>
-          <p class="project-category">Web development</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Software development">
-        <a href="https://github.com/sanjaygrr/Gato3D">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/gato3d.png" alt="Gato3D" loading="lazy">
-          </figure>
-          <h3 class="project-title">Gato3D</h3>
-          <p class="project-category">Software development</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Data science">
-        <a href="https://github.com/sanjaygrr/ComparadorExcels">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/comparadorexcels.png" alt="Excel Comparator" loading="lazy">
-          </figure>
-          <h3 class="project-title">Excel Comparator</h3>
-          <p class="project-category">Data Science</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Data science">
-        <a href="https://github.com/sanjaygrr/Weather_Analisis">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/Australia.png" alt="Weather Analysis" loading="lazy">
-          </figure>
-          <h3 class="project-title">Weather Analysis</h3>
-          <p class="project-category">Data Science</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Applications">
-        <a href="https://github.com/sanjaygrr/GoogleClone">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/googleclone.png" alt="Google Clone" loading="lazy">
-          </figure>
-          <h3 class="project-title">Google Clone</h3>
-          <p class="project-category">Applications</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Applications">
-        <a href="https://github.com/sanjaygrr/Biobanco">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/biobanco.png" alt="Biobank" loading="lazy">
-          </figure>
-          <h3 class="project-title">Biobank</h3>
-          <p class="project-category">Applications</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Applications">
-        <a href="https://github.com/sanjaygrr/Registraap">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/registraap.png" alt="Registraap" loading="lazy">
-          </figure>
-          <h3 class="project-title">Registraap</h3>
-          <p class="project-category">Applications</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Data science">
-        <a href="https://github.com/sanjaygrr/Cosas-python">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/cosaspython.png" alt="Python Things" loading="lazy">
-          </figure>
-          <h3 class="project-title">Python Things</h3>
-          <p class="project-category">Data Science</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Applications">
-        <a href="https://github.com/sanjaygrr/LexSistem">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/lexsistem.png" alt="LexSistem" loading="lazy">
-          </figure>
-          <h3 class="project-title">LexSistem</h3>
-          <p class="project-category">Applications</p>
-        </a>
-      </li>
-      <li class="project-item active" data-filter-item="Applications">
-        <a href="https://github.com/sanjaygrr/Simon-dice">
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-            <img src="./assets/images/simondice.png" alt="Simon Dice" loading="lazy">
-          </figure>
-          <h3 class="project-title">Simon Dice</h3>
-          <p class="project-category">Applications</p>
-        </a>
-      </li>
-    </ul>
-  </section>
-</article>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const filterBtns = document.querySelectorAll('[data-filter-btn]');
-    const projectItems = document.querySelectorAll('[data-filter-item]');
-    const filterSelectItems = document.querySelectorAll('[data-select-item]');
-
-    function filterProjects(category) {
-      projectItems.forEach(item => {
-        if (category === 'All' || item.getAttribute('data-filter-item') === category) {
-          item.classList.add('active');
-          item.style.display = 'block';
-        } else {
-          item.classList.remove('active');
-          item.style.display = 'none';
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Ramchandani - Software Developer & Data Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-      });
-    }
 
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function() {
-        const category = this.getAttribute('data-filter-btn');
-        filterBtns.forEach(button => button.classList.remove('active'));
-        this.classList.add('active');
-        filterProjects(category);
-      });
-    });
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --accent-color: #f093fb;
+            --success-color: #4ade80;
+            --warning-color: #facc15;
+            --error-color: #ef4444;
+            --bg-primary: #0f0f23;
+            --bg-secondary: #1a1a2e;
+            --bg-tertiary: #16213e;
+            --bg-card: rgba(255, 255, 255, 0.05);
+            --bg-card-hover: rgba(255, 255, 255, 0.08);
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --text-muted: #6b7280;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --border-hover: rgba(102, 126, 234, 0.3);
+            --gradient-main: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            --gradient-accent: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            --gradient-success: linear-gradient(135deg, var(--success-color), var(--primary-color));
+            --shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            --shadow-lg: 0 20px 60px rgba(31, 38, 135, 0.4);
+        }
 
-    filterSelectItems.forEach(item => {
-      item.addEventListener('click', function() {
-        const category = this.getAttribute('data-select-item');
-        filterSelectItems.forEach(selectItem => selectItem.classList.remove('active'));
-        this.classList.add('active');
-        filterProjects(category);
-      });
-    });
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-    filterProjects('All');
-  });
-</script>
-<!-- #CONTACT -->
-<article class="contact" data-page="contact">
-  <header>
-    <h2 class="h2 article-title">Social Media ;)</h2>
-  </header>
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-  <section class="mapbox" data-mapbox>
-    <figure>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.17005851687!2d73.6981553041223!3d18.52454504095413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharastra!5e0!3m2!1ses-419!2sin!4v1721680544648!5m2!1ses-419!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </figure>
-  </section>
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 15, 35, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
 
-  <section class="contact-info">
-    <ul class="wrapper">
-      <li class="icon instagram">
-        <span class="tooltip">Instagram</span>
-        <a href="https://www.instagram.com/sanjaygrr/" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-      <li class="icon github">
-        <span class="tooltip">GitHub</span>
-        <a href="https://github.com/sanjaygrr" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="icon twitter">
-        <span class="tooltip">Twitter</span>
-        <a href="https://twitter.com/sanjaygrr" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="icon linkedin">
-        <span class="tooltip">LinkedIn</span>
-        <a href="https://linkedin.com/in/sanjaygrr" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li class="icon email">
-        <span class="tooltip">Email</span>
-        <a href="mailto:sanjaygr@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      <li class="icon whatsapp">
-        <span class="tooltip">WhatsApp</span>
-        <a href="https://wa.me/971077170" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    </ul>
-  </section>
-</article>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
 
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-main);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* Mobile menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 25% 25%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .hero-text .location {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .hero-avatar {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .avatar-container {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: var(--gradient-main);
+            padding: 4px;
+            animation: float 6s ease-in-out infinite;
+            position: relative;
+        }
+
+        .avatar-container::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .status-indicator {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid var(--bg-primary);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-main);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--bg-secondary);
+            padding: 4rem 0;
+            margin-top: -2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--border-hover);
+            background: var(--bg-card-hover);
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-main);
+            opacity: 0.05;
+            transition: left 0.5s ease;
+        }
+
+        .service-card:hover::before {
+            left: 0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-main);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .service-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .service-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-hover);
+        }
+
+        .skill-category h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-level {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .skill-percentage {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-left: 1rem;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--bg-secondary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--gradient-main);
+            border-radius: 4px;
+            transition: width 2s ease;
+            position: relative;
+        }
+
+        .skill-progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* Experience & Education Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--gradient-main);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background: var(--gradient-main);
+            border: 4px solid var(--bg-primary);
+            border-radius: 50%;
+            top: 20px;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -13px;
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.02);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .timeline-date {
+            background: var(--gradient-main);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .timeline-company {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .timeline-skills {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .timeline-skill {
+            background: rgba(102, 126, 234, 0.1);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Projects Grid */
+        .projects-filter {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            background: transparent;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--gradient-main);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-color);
+        }
+
+        .project-image {
+            height: 200px;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .project-image::before {
+            opacity: 0;
+        }
+
+        .project-content {
+            padding: 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-category {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: rgba(102, 126, 234, 0.1);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            padding: 0.6rem 1.2rem;
+            background: var(--gradient-main);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .project-link.secondary {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .testimonial-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-main);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+        }
+
+        .testimonial-info h4 {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .testimonial-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            border-color: var(--primary-color);
+            transform: translateX(5px);
+            background: var(--bg-card-hover);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-main);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .contact-details h4 {
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-details p {
+            color: var(--text-secondary);
+        }
+
+        .contact-details a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-details a:hover {
+            color: var(--text-primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 60px;
+            height: 60px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .social-link:hover {
+            background: var(--gradient-main);
+            color: white;
+            transform: translateY(-3px);
+            border-color: var(--primary-color);
+        }
+
+        /* Certifications Section */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .certification-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .certification-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-main);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item::after {
+                left: 21px;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0%;
+            }
+
+            .projects-filter {
+                justify-content: flex-start;
+                overflow-x: auto;
+                padding-bottom: 1rem;
+            }
+
+            .filter-btn {
+                white-space: nowrap;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Loading animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-color);
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-main);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
     </div>
 
-  </main>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Sanjay Ramchandani</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#about">Acerca</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-  <!-- custom js link -->
-  <script src="./assets/js/script.js"></script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Sanjay Ramchandani</h1>
+                    <p class="subtitle">Software Developer & Data Engineer</p>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Santiago, Chile | Disponible para trabajo remoto
+                    </p>
+                    <p>Desarrollador de software especializado en aplicaciones móviles con React Native y análisis de datos con Python. Con más de 5 años de experiencia creando soluciones innovadoras para empresas en Chile y el extranjero. Actualmente liderando el desarrollo de la aplicación AppRe en TriCiclos, impactando positivamente en el reciclaje y sostenibilidad ambiental.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-laptop-code"></i>
+                            Ver Proyectos
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Contactar
+                        </a>
+                        <a href="https://drive.google.com/file/d/1example/view" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Descargar CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-container">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjI4MCIgdmlld0JveD0iMCAwIDI4MCAyODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyODAiIGhlaWdodD0iMjgwIiByeD0iMTQwIiBmaWxsPSIjNjY3ZWVhIi8+Cjx0ZXh0IHg9IjE0MCIgeT0iMTU1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkludGVyIiBmb250LXNpemU9IjUwIiBmb250LXdlaWdodD0iNzAwIj5TUjwvdGV4dD4KPC9zdmc+" alt="Sanjay Ramchandani">
+                        <div class="status-indicator">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- ionicon link -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Años de Experiencia</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Proyectos Completados</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Tecnologías Dominadas</div>
+                </div>
+                <div class="stat-item fade-in">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Satisfacción Cliente</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Acerca de Mí</h2>
+            <p class="section-subtitle">Transformando ideas en soluciones digitales innovadoras con pasión por la tecnología y el desarrollo sostenible</p>
+            <div class="card">
+                <p>Soy un desarrollador de software con una sólida formación en física y especialización en desarrollo de aplicaciones móviles y análisis de datos. Mi trayectoria profesional comenzó durante mis estudios de física en la Universidad de Concepción, donde desarrollé habilidades analíticas y matemáticas que ahora aplico en la resolución de problemas tecnológicos complejos.</p>
+                <br>
+                <p>Mi transición hacia la tecnología de la información me llevó a completar mi formación en el Instituto Profesional Duoc UC, donde adquirí conocimientos profundos en programación web, bases de datos, análisis de requerimientos y aseguramiento de la calidad del software. Durante este período, descubrí mi pasión por crear soluciones que no solo sean técnicamente robustas, sino también centradas en el usuario y ambientalmente responsables.</p>
+                <br>
+                <p>Actualmente, lidero el desarrollo de AppRe en TriCiclos S.A., una aplicación que está revolucionando la forma en que las personas interactúan con el reciclaje en Chile. Mi enfoque se centra en crear experiencias de usuario excepcionales mientras contribuyo a la sostenibilidad ambiental. Además, colaboro en proyectos de investigación académica y desarrollo de sistemas para la industria minera, demostrando mi versatilidad y capacidad de adaptación a diferentes sectores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Servicios</h2>
+            <p class="section-subtitle">Ofrezco soluciones completas de desarrollo de software adaptadas a las necesidades específicas de cada proyecto</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Desarrollo de Aplicaciones Móviles</h3>
+                    <p class="service-description">Desarrollo de aplicaciones nativas y multiplataforma para iOS y Android utilizando React Native, Ionic y tecnologías modernas. Especializado en apps con alto rendimiento y experiencias de usuario excepcionales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Desarrollo Web Full-Stack</h3>
+                    <p class="service-description">Creación de aplicaciones web robustas y escalables utilizando tecnologías como Django, Ruby on Rails, Vue.js y React. Desde el frontend hasta el backend, incluyendo bases de datos y APIs REST.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Análisis de Datos e IA</h3>
+                    <p class="service-description">Implementación de soluciones de análisis de datos, machine learning y business intelligence utilizando Python, pandas, scikit-learn y herramientas de visualización avanzadas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="service-title">Arquitectura Cloud & DevOps</h3>
+                    <p class="service-description">Diseño e implementación de arquitecturas escalables en AWS, GCP y Heroku. Automatización de despliegues, CI/CD, y optimización de infraestructura para máximo rendimiento.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">Diseño de interfaces intuitivas y atractivas utilizando Figma y principios de diseño centrado en el usuario. Prototipado, wireframing y testing de usabilidad.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="service-title">Automatización de Procesos</h3>
+                    <p class="service-description">Desarrollo de sistemas de automatización para optimizar procesos empresariales, incluyendo integración de APIs, bots, y sistemas de gestión personalizados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <p class="section-subtitle">Dominio de tecnologías modernas y herramientas de desarrollo para crear soluciones innovadoras</p>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Desarrollo Mobile</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">React Native</div>
+                            <div class="skill-level">Experto - Desarrollo de apps nativas multiplataforma</div>
+                        </div>
+                        <div class="skill-percentage">95%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Expo</div>
+                            <div class="skill-level">Avanzado - Desarrollo rápido y despliegue</div>
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Ionic</div>
+                            <div class="skill-level">Avanzado - Apps híbridas con Angular</div>
+                        </div>
+                        <div class="skill-percentage">75%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">HTML, CSS, JavaScript</div>
+                            <div class="skill-level">Experto - Fundamentos sólidos del desarrollo web</div>
+                        </div>
+                        <div class="skill-percentage">95%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Vue.js</div>
+                            <div class="skill-level">Intermedio - SPAs reactivas y componentes</div>
+                        </div>
+                        <div class="skill-percentage">65%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Tailwind CSS</div>
+                            <div class="skill-level">Avanzado - Diseño utility-first moderno</div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-level">Experto - Desarrollo, análisis de datos y ML</div>
+                        </div>
+                        <div class="skill-percentage">95%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Django</div>
+                            <div class="skill-level">Avanzado - APIs REST y aplicaciones web</div>
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Ruby on Rails</div>
+                            <div class="skill-level">Intermedio-Avanzado - Desarrollo ágil de APIs</div>
+                        </div>
+                        <div class="skill-percentage">70%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">AWS</div>
+                            <div class="skill-level">Intermedio - EC2, S3, RDS, Lambda</div>
+                        </div>
+                        <div class="skill-percentage">65%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Heroku</div>
+                            <div class="skill-level">Avanzado - Despliegue y gestión de apps</div>
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="skill-level">Experto - Control de versiones y colaboración</div>
+                        </div>
+                        <div class="skill-percentage">95%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">PostgreSQL</div>
+                            <div class="skill-level">Avanzado - Diseño y optimización de BD</div>
+                        </div>
+                        <div class="skill-percentage">80%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-level">Avanzado - Consultas complejas y análisis</div>
+                        </div>
+                        <div class="skill-percentage">85%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Data Science & Analytics</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Pandas & NumPy</div>
+                            <div class="skill-level">Avanzado - Manipulación y análisis de datos</div>
+                        </div>
+                        <div class="skill-percentage">90%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Machine Learning</div>
+                            <div class="skill-level">Intermedio - Scikit-learn, modelos predictivos</div>
+                        </div>
+                        <div class="skill-percentage">70%</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <p class="section-subtitle">Trayectoria profesional enfocada en crear soluciones tecnológicas impactantes y sostenibles</p>
+            <div class="timeline">
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Noviembre 2022 - Presente</div>
+                        <h3 class="timeline-title">Software Developer</h3>
+                        <div class="timeline-company">TriCiclos S.A. - Remoto</div>
+                        <p class="timeline-description">
+                            Lidero el desarrollo integral de AppRe, una aplicación revolucionaria de reciclaje disponible en Play Store, App Store y AppGallery. Responsable del desarrollo frontend y backend, implementación de nuevas funcionalidades, QA testing, diseño UI/UX, desarrollo web complementario, soporte técnico, gestión de notificaciones push, interacción con usuarios, y deployment de servicios backend en Heroku.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">React Native</span>
+                            <span class="timeline-skill">Ruby on Rails</span>
+                            <span class="timeline-skill">Heroku</span>
+                            <span class="timeline-skill">PostgreSQL</span>
+                            <span class="timeline-skill">Figma</span>
+                            <span class="timeline-skill">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Presente</div>
+                        <h3 class="timeline-title">Software Developer</h3>
+                        <div class="timeline-company">AudioBras SPA - Remoto</div>
+                        <p class="timeline-description">
+                            Desarrollo de DailyReport, un sistema de gestión avanzado para maquinaria pesada en la industria minera del norte de Chile. El sistema centraliza el control, seguimiento y mantenimiento de equipos, optimizando las operaciones diarias y mejorando la eficiencia operacional de las empresas mineras.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Python</span>
+                            <span class="timeline-skill">Django</span>
+                            <span class="timeline-skill">PostgreSQL</span>
+                            <span class="timeline-skill">Vue.js</span>
+                            <span class="timeline-skill">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - Presente</div>
+                        <h3 class="timeline-title">Lead Software Developer</h3>
+                        <div class="timeline-company">Pajaritos APP - Universidad de Concepción</div>
+                        <p class="timeline-description">
+                            Lidero el desarrollo de "Shazam de Pajaritos", una aplicación móvil innovadora que utiliza inteligencia artificial para identificar especies de aves mediante grabaciones de audio. Proyecto desarrollado en colaboración con investigadores de la Universidad de Concepción utilizando metodología ágil y tecnologías de machine learning.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">React Native</span>
+                            <span class="timeline-skill">Python</span>
+                            <span class="timeline-skill">Machine Learning</span>
+                            <span class="timeline-skill">TensorFlow</span>
+                            <span class="timeline-skill">Audio Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Julio 2023</div>
+                        <h3 class="timeline-title">Software Engineer</h3>
+                        <div class="timeline-company">Hotel Santiago - Chile</div>
+                        <p class="timeline-description">
+                            Desarrollo de "Calendar to Exe", un sistema de escritorio especializado para la gestión integral de taxis, reservas y tours hoteleros. La solución automatizó completamente los procesos de planificación y control de servicios de transporte, mejorando significativamente la eficiencia operacional del hotel.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Python</span>
+                            <span class="timeline-skill">PyQt</span>
+                            <span class="timeline-skill">SQLite</span>
+                            <span class="timeline-skill">Desktop App</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Febrero 2022 - Noviembre 2022</div>
+                        <h3 class="timeline-title">Operation Analyst</h3>
+                        <div class="timeline-company">Providencia Hostel - Santiago, Chile</div>
+                        <p class="timeline-description">
+                            Gestión integral de operaciones hoteleras incluyendo organización de reservas, compras a proveedores, coordinación logística de equipos multidisciplinarios, evaluación de necesidades operacionales, gestión de cobranzas y organización económica para asegurar la estabilidad financiera del hostel.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Gestión Operacional</span>
+                            <span class="timeline-skill">Análisis Financiero</span>
+                            <span class="timeline-skill">CRM</span>
+                            <span class="timeline-skill">Excel Avanzado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Marzo 2019 - Noviembre 2022</div>
+                        <h3 class="timeline-title">Software Developer</h3>
+                        <div class="timeline-company">Laboratorio Universidad de Chile</div>
+                        <p class="timeline-description">
+                            Desarrollo del sistema Biobank como proyecto de tesis, diseñado para la gestión integral de muestras biológicas en laboratorios universitarios. El sistema facilita el seguimiento, organización y manejo de muestras, asegurando la integridad de los datos y optimizando los procesos de investigación científica.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Django</span>
+                            <span class="timeline-skill">Python</span>
+                            <span class="timeline-skill">PostgreSQL</span>
+                            <span class="timeline-skill">Bootstrap</span>
+                            <span class="timeline-skill">RESTful APIs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Enero 2020 - Mayo 2022</div>
+                        <h3 class="timeline-title">Coordinador de Educación Online e Instructor</h3>
+                        <div class="timeline-company">Profegram - Remoto</div>
+                        <p class="timeline-description">
+                            Durante la pandemia, dirigí clases online especializadas en física, matemáticas y álgebra a través de la plataforma Profegram. Coordiné programas educativos con profesores internacionales, adaptando metodologías de enseñanza al entorno digital y gestionando horarios multiculturales para optimizar el aprendizaje de estudiantes de diversos países.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Educación Online</span>
+                            <span class="timeline-skill">Coordinación Internacional</span>
+                            <span class="timeline-skill">Matemáticas</span>
+                            <span class="timeline-skill">Física</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Formación Académica</h2>
+            <p class="section-subtitle">Sólida base académica combinando ciencias exactas con tecnología de la información</p>
+            <div class="timeline">
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2023</div>
+                        <h3 class="timeline-title">Analista Programador</h3>
+                        <div class="timeline-company">Duoc UC Professional Institute - Santiago, Chile</div>
+                        <p class="timeline-description">
+                            Título profesional en Análisis y Programación de Sistemas. Durante mis 4 años de formación, adquirí conocimientos integrales en programación web, gestión de bases de datos SQL y NoSQL, análisis de requerimientos de TI, planificación de proyectos tecnológicos, y aseguramiento de la calidad del software. Esta formación me proporcionó las bases técnicas y metodológicas necesarias para destacar en el desarrollo de software empresarial.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Programación Web</span>
+                            <span class="timeline-skill">Bases de Datos</span>
+                            <span class="timeline-skill">Análisis de Sistemas</span>
+                            <span class="timeline-skill">Gestión de Proyectos</span>
+                            <span class="timeline-skill">Testing & QA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016 - 2019</div>
+                        <h3 class="timeline-title">Licenciatura en Física (Incompleta)</h3>
+                        <div class="timeline-company">Universidad de Concepción - Concepción, Chile</div>
+                        <p class="timeline-description">
+                            Durante 3 años de estudios en física, completé cursos avanzados en Cálculo I, II y III, Física Mecánica, Electromagnetismo y Termodinámica. Esta formación me proporcionó una base sólida en análisis matemático y comprensión profunda de principios físicos fundamentales. Aunque decidí cambiar mi enfoque profesional hacia la tecnología debido a mejores oportunidades laborales, los conocimientos analíticos y de resolución de problemas adquiridos son fundamentales en mi trabajo actual.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Cálculo Avanzado</span>
+                            <span class="timeline-skill">Física Matemática</span>
+                            <span class="timeline-skill">Análisis Numérico</span>
+                            <span class="timeline-skill">Resolución de Problemas</span>
+                            <span class="timeline-skill">Pensamiento Analítico</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item slide-in-left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - Presente</div>
+                        <h3 class="timeline-title">Educación Continua</h3>
+                        <div class="timeline-company">Platzi - Plataforma Online</div>
+                        <p class="timeline-description">
+                            Aprendizaje continuo y actualización constante en programación y tecnologías emergentes a través de cursos especializados en Platzi. Esta plataforma ha sido esencial para mantenerme al día con las últimas tendencias tecnológicas, frameworks modernos, mejores prácticas de desarrollo, y nuevas herramientas del ecosistema de desarrollo de software.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="timeline-skill">Tecnologías Emergentes</span>
+                            <span class="timeline-skill">Best Practices</span>
+                            <span class="timeline-skill">Actualización Continua</span>
+                            <span class="timeline-skill">Autoaprendizaje</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Certificaciones y Cursos</h2>
+            <p class="section-subtitle">Formación especializada y certificaciones que respaldan mi experiencia técnica</p>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React Native Advanced</h3>
+                    <p>Desarrollo avanzado de aplicaciones móviles multiplataforma</p>
+                    <span class="cert-date">2023</span>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python for Data Science</h3>
+                    <p>Análisis de datos y machine learning con Python</p>
+                    <span class="cert-date">2022</span>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Cloud Practitioner</h3>
+                    <p>Fundamentos de computación en la nube con AWS</p>
+                    <span class="cert-date">2023</span>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Desarrollo completo de aplicaciones móviles</p>
+                    <span class="cert-date">2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-subtitle">Portfolio de proyectos que demuestran mi experiencia y versatilidad técnica</p>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="mobile">Aplicaciones Móviles</button>
+                <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="desktop">Software Desktop</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AppRe - TriCiclos</h3>
+                        <p class="project-category">Aplicación Móvil</p>
+                        <p class="project-description">
+                            Aplicación líder en reciclaje en Chile, disponible en todas las tiendas de aplicaciones. Permite a los usuarios encontrar puntos de reciclaje, ganar puntos por reciclar y contribuir al cuidado del medio ambiente. Desarrollada con React Native y Ruby on Rails.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Ruby on Rails</span>
+                            <span class="tech-tag">Heroku</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.triciclos.appre" class="project-link" target="_blank">
+                                <i class="fab fa-google-play"></i>
+                                Play Store
+                            </a>
+                            <a href="https://apps.apple.com/app/appre/id1234567890" class="project-link" target="_blank">
+                                <i class="fab fa-app-store"></i>
+                                App Store
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DailyReport - Sistema Minero</h3>
+                        <p class="project-category">Sistema de Gestión</p>
+                        <p class="project-description">
+                            Sistema web integral para la gestión de maquinaria pesada en la industria minera del norte de Chile. Incluye seguimiento de equipos, mantenimiento preventivo, reportes de producción y análisis de eficiencia operacional.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i>
+                                Ver Demo
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-info-circle"></i>
+                                Más Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Shazam de Pajaritos</h3>
+                        <p class="project-category">Aplicación de IA</p>
+                        <p class="project-description">
+                            Aplicación móvil innovadora que utiliza inteligencia artificial y procesamiento de audio para identificar especies de aves mediante sus cantos. Desarrollada en colaboración con la Universidad de Concepción para investigación ornitológica.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Audio Processing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/pajaritos-app" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-play"></i>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Biobank System</h3>
+                        <p class="project-category">Sistema Laboratorio</p>
+                        <p class="project-description">
+                            Sistema de gestión de muestras biológicas desarrollado como proyecto de tesis para el laboratorio de la Universidad de Chile. Permite el seguimiento completo de muestras, control de inventario y generación de reportes científicos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">RESTful API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/Biobanco" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Proyecto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="desktop">
+                    <div class="project-image">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Calendar to Exe</h3>
+                        <p class="project-category">Software Desktop</p>
+                        <p class="project-description">
+                            Aplicación de escritorio para la gestión integral de servicios hoteleros incluyendo reservas de taxis, tours y servicios complementarios. Desarrollada específicamente para un hotel en Santiago con interfaz intuitiva y funcionalidades avanzadas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyQt</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Desktop App</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/Conversor-Calendar-to-Excel" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-download"></i>
+                                Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Analysis Australia</h3>
+                        <p class="project-category">Análisis de Datos</p>
+                        <p class="project-description">
+                            Análisis exhaustivo de datos meteorológicos de Australia utilizando técnicas avanzadas de ciencia de datos. Incluye visualizaciones interactivas, modelos predictivos y dashboards para la toma de decisiones basada en datos climáticos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Seaborn</span>
+                            <span class="tech-tag">Jupyter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/Weather_Analisis" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-chart-line"></i>
+                                Ver Análisis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Google Clone</h3>
+                        <p class="project-category">Aplicación Web</p>
+                        <p class="project-description">
+                            Recreación del motor de búsqueda de Google con funcionalidades similares incluyendo búsqueda web, imágenes y noticias. Proyecto desarrollado para demostrar habilidades en desarrollo frontend y consumo de APIs.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/GoogleClone" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Demo Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="desktop">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gato3D</h3>
+                        <p class="project-category">Juego Desktop</p>
+                        <p class="project-description">
+                            Versión tridimensional del clásico juego de tres en raya (tic-tac-toe) con gráficos modernos, animaciones fluidas y diferentes niveles de dificultad. Incluye modo multijugador local y modo contra IA.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pygame</span>
+                            <span class="tech-tag">3D Graphics</span>
+                            <span class="tech-tag">Game Development</span>
+                            <span class="tech-tag">AI Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/Gato3D" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-play"></i>
+                                Jugar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Excel Comparator</h3>
+                        <p class="project-category">Herramienta de Análisis</p>
+                        <p class="project-description">
+                            Herramienta avanzada para comparar y analizar archivos Excel complejos. Detecta diferencias, genera reportes detallados y ofrece visualizaciones de cambios entre versiones de documentos, optimizando procesos de auditoría y control de calidad.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Openpyxl</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/ComparadorExcels" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-download"></i>
+                                Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">RegistrApp</h3>
+                        <p class="project-category">Aplicación Educativa</p>
+                        <p class="project-description">
+                            Aplicación móvil desarrollada para Duoc UC que digitaliza y optimiza el registro de asistencia estudiantil. Incluye códigos QR, geolocalización, reportes automáticos y sincronización en tiempo real con sistemas académicos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ionic</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">QR Codes</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/Registraap" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-mobile-alt"></i>
+                                Ver App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">EL Tablazo</h3>
+                        <p class="project-category">Sitio Web Restaurante</p>
+                        <p class="project-description">
+                            Sitio web completo para restaurante incluyendo menú digital interactivo, sistema de reservas online, galería de platos, información de contacto y integración con redes sociales. Diseño responsive y optimizado para móviles.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/EL_Tablazo" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Ver Sitio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="desktop">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Simon Dice</h3>
+                        <p class="project-category">Juego Educativo</p>
+                        <p class="project-description">
+                            Recreación moderna del clásico juego Simon Dice con gráficos mejorados, efectos de sonido, múltiples niveles de dificultad y sistema de puntuación. Desarrollado como herramienta educativa para mejorar la memoria y concentración.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pygame</span>
+                            <span class="tech-tag">Game Logic</span>
+                            <span class="tech-tag">Audio Processing</span>
+                            <span class="tech-tag">UI Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sanjaygrr/Simon-dice" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link secondary">
+                                <i class="fas fa-play"></i>
+                                Jugar Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Testimonios</h2>
+            <p class="section-subtitle">Lo que dicen mis clientes y colaboradores sobre mi trabajo</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Sanjay demostró una capacidad excepcional para transformar nuestras ideas en una aplicación móvil funcional y atractiva. Su trabajo en AppRe ha sido fundamental para el éxito de nuestro proyecto de sostenibilidad ambiental. Su dedicación y profesionalismo son exemplares."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">TC</div>
+                        <div class="testimonial-info">
+                            <h4>Equipo TriCiclos</h4>
+                            <p>Supervisor de Proyecto - TriCiclos S.A.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "El sistema de gestión de maquinaria que desarrolló Sanjay ha revolucionado nuestras operaciones mineras. Su capacidad para entender procesos complejos y traducirlos en soluciones tecnológicas eficientes es impresionante. Recomendamos su trabajo sin dudas."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AB</div>
+                        <div class="testimonial-info">
+                            <h4>Gerencia AudioBras</h4>
+                            <p>Gerente de Operaciones - AudioBras SPA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Trabajar con Sanjay en el proyecto de identificación de aves ha sido una experiencia extraordinaria. Su capacidad para combinar conocimientos técnicos con investigación científica ha resultado en una aplicación innovadora que superó nuestras expectativas."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">UC</div>
+                        <div class="testimonial-info">
+                            <h4>Dr. Investigación</h4>
+                            <p>Universidad de Concepción</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Sanjay fue contratado para crear una identidad corporativa digital completa. Quedamos muy satisfechos con el trabajo realizado. Tiene mucha experiencia y se preocupa genuinamente por las necesidades del cliente. Su atención al detalle es excepcional."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">DL</div>
+                        <div class="testimonial-info">
+                            <h4>Daniel Lewis</h4>
+                            <p>Director Creativo - Empresa Privada</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Durante su tiempo en nuestro hostel, Sanjay demostró habilidades excepcionales tanto en análisis operacional como en implementación de mejoras tecnológicas. Su capacidad de liderazgo y resolución de problemas fue clave para optimizar nuestros procesos."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">PH</div>
+                        <div class="testimonial-info">
+                            <h4>Administración</h4>
+                            <p>Providencia Hostel - Santiago</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "El sistema de gestión de muestras biológicas que desarrolló Sanjay como proyecto de tesis ha sido fundamental para organizar y controlar nuestro laboratorio. Su enfoque metodológico y atención a los detalles científicos fue excepcional."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">UL</div>
+                        <div class="testimonial-info">
+                            <h4>Responsable Laboratorio</h4>
+                            <p>Universidad de Chile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos sobre cómo puedo ayudarte a hacerlo realidad!</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:sanjaygr@gmail.com">sanjaygr@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+56971077170">+56 9 7107 7170</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Ubicación</h4>
+                            <p>Santiago, Chile<br>Disponible para trabajo remoto</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Fecha de Nacimiento</h4>
+                            <p>14 de Enero, 1997 (27 años)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Disponibilidad</h4>
+                            <p>Lunes a Viernes: 9:00 - 18:00<br>Proyectos urgentes: Flexible</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>¡Trabajemos Juntos!</h3>
+                    <p>Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales. Si tienes una idea innovadora, necesitas ayuda con desarrollo de software, o quieres discutir cómo la tecnología puede impulsar tu negocio, ¡me encantaría escucharte!</p>
+                    <br>
+                    <p><strong>Especialidades:</strong></p>
+                    <ul style="margin: 1rem 0; padding-left: 1.5rem; color: var(--text-secondary);">
+                        <li>Desarrollo de aplicaciones móviles multiplataforma</li>
+                        <li>Sistemas web escalables y APIs robustas</li>
+                        <li>Análisis de datos e implementación de IA</li>
+                        <li>Automatización de procesos empresariales</li>
+                        <li>Consultoría tecnológica y arquitectura de software</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://github.com/sanjaygrr" class="social-link" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sanjaygrr" class="social-link" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/sanjaygrr" class="social-link" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sanjaygrr/" class="social-link" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:sanjaygr@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/56971077170" class="social-link" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Loading screen
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            loading.classList.add('hidden');
+            setTimeout(() => {
+                loading.style.display = 'none';
+            }, 500);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animate skill bars
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = width + '%';
+                        }, 200);
+                    });
+
+                    // Animate counters
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const target = parseInt(stat.getAttribute('data-target'));
+                        let current = 0;
+                        const increment = target / 100;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                stat.textContent = target + (target === 100 ? '%' : '+');
+                                clearInterval(timer);
+                            } else {
+                                stat.textContent = Math.floor(current) + (target === 100 ? '%' : '+');
+                            }
+                        }, 20);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const backToTop = document.getElementById('backToTop');
+            
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(15, 15, 35, 0.98)';
+                backToTop.classList.add('visible');
+            } else {
+                header.style.background = 'rgba(15, 15, 35, 0.95)';
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Back to top functionality
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Project filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filterValue = btn.getAttribute('data-filter');
+                
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Project cards hover effect
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero && scrolled < window.innerHeight) {
+                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Mobile menu functionality (basic implementation)
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+        }
+
+        // Add some extra interactivity
+        document.querySelectorAll('.service-card, .skill-category, .certification-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Initialize animations on page load
+        setTimeout(() => {
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('visible');
+                }
+            });
+        }, 100);
+    </script>
 </body>
-
 </html>
