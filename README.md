@@ -1,60 +1,70 @@
-# 🌟 Portafolio de Sanjay 🚀
+# Sanjay Ramchandani — Portfolio
 
-¡Bienvenidos a mi increíble portafolio! 🎨✨
+Personal portfolio / portafolio personal — a single-page, bilingual (EN/ES) site with a developer-editor aesthetic.
 
-## 🎉 Introducción
+🔗 **Live:** [sanjaygrr.github.io/Perfil](https://sanjaygrr.github.io/Perfil/)
 
-Hola, soy **Sanjay**. Soy un apasionado desarrollador web y diseñador UI/UX. Este portafolio es una muestra de mis habilidades y proyectos. ¡Espero que disfrutes navegando por él tanto como yo disfruté creándolo! 😄
+![HTML5](https://img.shields.io/badge/HTML5-e34f26?logo=html5&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38bdf8?logo=tailwindcss&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222?logo=github&logoColor=white)
 
-## 📋 Contenido
+---
 
-- 🌐 [Principal](index.html)
-- 💼 [Portafolio](portafolio.html)
-- 📝 [Blog](blog.html)
+## ✨ Features
 
-## 🌌 Tecnologías Utilizadas
+- 🌗 **Dark developer theme** with a soft, masculine pastel palette (teal / sky / periwinkle / sage) and a code-editor look.
+- 🌐 **Bilingual EN/ES** with a one-click language toggle (defaults to English, remembers your choice via `localStorage`).
+- ⌨️ **Monospace details** — JetBrains Mono, terminal snippet, `// section` eyebrows and a blinking caret.
+- 🖥️ **Websites in production** — showcase of 9 live client platforms.
+- 💼 **Experience timeline** — full professional history synced with LinkedIn.
+- 🎓 **Education & certifications**, 🛠️ **skills**, and 🐙 **open-source projects**.
+- 🎮 **Creative Coding & Demos** — live interactive experiments hosted on GitHub Pages.
+- 📱 Fully **responsive** with smooth scrolling, animated skill bars and scroll-spy navigation.
 
-- **HTML5** 📝
-- **CSS3** 🎨
-- **JavaScript** 💻
-- **Tailwind CSS** 🌬️
-- **Animate.css** 🕺
-- **Particles.js** ✨
-- **Canvas-Confetti** 🎊
+## 🧱 Tech stack
 
-## 🚀 Características
+| | |
+|---|---|
+| Markup | HTML5 (single `index.html`) |
+| Styling | Tailwind CSS (CDN) + custom CSS |
+| Fonts | Inter · JetBrains Mono |
+| Icons | Font Awesome 6 |
+| Behaviour | Vanilla JavaScript (i18n, menu, scroll-spy, animations) |
+| Hosting | GitHub Pages |
 
-### Página Principal
-- 🎇 Fondo animado con partículas y líneas blancas.
-- 💫 Texto animado para una experiencia envolvente.
-- 🌃 Diseño oscuro elegante.
+No build step, no dependencies — just static files.
 
-### Portafolio
-- 💎 Partículas personalizadas con formas y colores.
-- 🎉 Efecto de confeti al hacer clic en los proyectos.
-- 🌟 Animaciones de entrada atractivas.
+## 🗂️ Structure
 
-### Blog
-- 🌟 Estrellas animadas y efectos de fuego.
-- 🌠 Diseño visual impactante.
-- 📚 Artículos destacados con resúmenes.
+```
+Perfil/
+├── index.html    # entire site (markup + styles + scripts)
+├── perfil.jpg    # profile photo
+└── README.md
+```
 
-## 👀 Vista Previa
+## 🚀 Run locally
 
-### 🌐 Principal
+```bash
+git clone https://github.com/sanjaygrr/Perfil.git
+cd Perfil
+python3 -m http.server 8000   # or: npx serve
+# open http://localhost:8000
+```
 
+Or simply open `index.html` in your browser.
 
-### 💼 Portafolio
+## 🌍 Deploy
 
+Hosted on **GitHub Pages** from the `main` branch. Any push to `main` updates the live site automatically.
 
-### 📝 Blog
-
-
-## 📦 Instalación
-
-## 📞 Contacto
+## 📬 Contact
 
 - **Email:** sanjaygr@gmail.com
-- **LinkedIn:** [Sanjay]([https://linkedin.com/in/sanjay](https://www.linkedin.com/in/sanjaygrr/))
+- **LinkedIn:** [in/sanjaygrr](https://www.linkedin.com/in/sanjaygrr)
+- **GitHub:** [@sanjaygrr](https://github.com/sanjaygrr)
 
-¡Gracias por visitar mi portafolio! Espero que te guste lo que ves. Si tienes alguna pregunta o simplemente quieres saludar, no dudes en contactarme. ¡Nos vemos! 👋😃
+---
+
+<sub>Built with care and modern web tech · © 2026 Sanjay Ramchandani</sub>
