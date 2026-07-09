@@ -25,19 +25,25 @@
                         line:  '#22304a',
                         txt:   '#c9d4e5',
                         mut:   '#8593ab',
-                        teal:  '#7dd3c0',
-                        sky:   '#93c5fd',
-                        iris:  '#a5b4fc',
-                        sage:  '#a8c9a3',
-                        amber: '#e6c07b',
+                        teal:  '#4ff0d0',
+                        sky:   '#7cc4ff',
+                        iris:  '#b18cff',
+                        sage:  '#7bffb0',
+                        amber: '#ffd166',
+                        neon:  '#39f5c9',
+                        pink:  '#ff5cc8',
+                        violet:'#a970ff',
+                        lime:  '#b6ff5b',
                     },
                     animation: {
                         'float': 'float 7s ease-in-out infinite',
                         'blink': 'blink 1.1s step-end infinite',
+                        'hue': 'hue 8s ease infinite',
                     },
                     keyframes: {
                         float: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-14px)' } },
                         blink: { '0%,100%': { opacity: '1' }, '50%': { opacity: '0' } },
+                        hue: { '0%,100%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' } },
                     }
                 }
             }
@@ -63,10 +69,19 @@
             mask-image: radial-gradient(circle at 50% 30%, black, transparent 85%);
         }
         .grad-text {
-            background: linear-gradient(120deg,#7dd3c0,#93c5fd 50%,#a5b4fc);
+            background: linear-gradient(120deg,#39f5c9,#7cc4ff 38%,#a970ff 70%,#ff5cc8);
+            background-size: 220% 220%;
             -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 18px rgba(90,157,255,0.28));
+            animation: hue 8s ease infinite;
         }
-        .grad-bg { background: linear-gradient(120deg,#7dd3c0,#93c5fd 55%,#a5b4fc); }
+        .grad-bg {
+            background: linear-gradient(120deg,#39f5c9,#7cc4ff 55%,#a970ff);
+            background-size: 200% 200%;
+            box-shadow: 0 0 22px -6px rgba(90,157,255,0.6), 0 0 12px -4px rgba(57,245,201,0.5);
+            animation: hue 8s ease infinite;
+        }
+        a.grad-bg:hover, button.grad-bg:hover { box-shadow: 0 0 30px -4px rgba(169,112,255,0.75), 0 0 16px -2px rgba(57,245,201,0.7); }
         .panel {
             background: rgba(148,163,184,0.045);
             border: 1px solid rgba(137,157,199,0.14);
@@ -75,17 +90,22 @@
         }
         .panel:hover {
             transform: translateY(-6px);
-            border-color: rgba(125,211,192,0.45);
-            box-shadow: 0 18px 40px -18px rgba(125,211,192,0.35), 0 0 0 1px rgba(125,211,192,0.10) inset;
+            border-color: rgba(57,245,201,0.55);
+            box-shadow: 0 22px 50px -20px rgba(57,245,201,0.35), 0 0 26px -6px rgba(169,112,255,0.35), 0 0 0 1px rgba(57,245,201,0.12) inset;
         }
         .skill-track { background: rgba(137,157,199,0.15); }
-        .skill-bar { background: linear-gradient(90deg,#7dd3c0,#a5b4fc); box-shadow: 0 0 12px rgba(125,211,192,0.5); }
-        .nav-link { color:#8593ab; transition:color .25s; }
-        .nav-link:hover, .nav-link.active { color:#c9d4e5; }
-        .eyebrow { color:#7dd3c0; letter-spacing:.02em; }
-        .chip { border:1px solid rgba(137,157,199,0.22); background:rgba(148,163,184,0.05); }
-        .caret::after { content:"▋"; margin-left:2px; color:#7dd3c0; animation: blink 1.1s step-end infinite; }
-        ::selection { background: rgba(125,211,192,0.3); }
+        .skill-bar { background: linear-gradient(90deg,#39f5c9,#a970ff); box-shadow: 0 0 16px rgba(57,245,201,0.75); }
+        .nav-link { color:#8593ab; transition:color .25s, text-shadow .25s; }
+        .nav-link:hover, .nav-link.active { color:#eaf2ff; text-shadow: 0 0 12px rgba(57,245,201,0.6); }
+        .eyebrow { color:#39f5c9; letter-spacing:.03em; text-shadow: 0 0 14px rgba(57,245,201,0.5); }
+        .chip { border:1px solid rgba(137,157,199,0.22); background:rgba(148,163,184,0.05); transition: box-shadow .25s, border-color .25s; }
+        .chip:hover { border-color: rgba(169,112,255,0.5); box-shadow: 0 0 14px -2px rgba(169,112,255,0.5); }
+        .live-dot { box-shadow: 0 0 8px 1px rgba(123,255,176,0.9); }
+        .caret::after { content:"▋"; margin-left:2px; color:#39f5c9; animation: blink 1.1s step-end infinite; text-shadow: 0 0 10px rgba(57,245,201,0.8); }
+        ::selection { background: rgba(169,112,255,0.35); color:#fff; }
+        @keyframes hue { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+        @media (prefers-reduced-motion: reduce) { .grad-text, .grad-bg { animation: none; } }
     </style>
 </head>
 <body class="text-txt font-inter antialiased">
@@ -139,11 +159,11 @@
                     <p class="font-mono text-lg sm:text-xl text-sky caret" data-en="Software Engineer" data-es="Ingeniero Informático">Software Engineer</p>
                     <div class="flex items-center text-mut font-mono text-sm gap-4 flex-wrap">
                         <span><i class="fas fa-location-dot text-teal mr-2"></i><span data-en="Santiago, Chile" data-es="Santiago, Chile">Santiago, Chile</span></span>
-                        <span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-sage mr-2 animate-pulse"></span><span data-en="available for work" data-es="disponible para trabajar">available for work</span></span>
+                        <span class="inline-flex items-center"><span class="w-2 h-2 rounded-full bg-lime live-dot mr-2 animate-pulse"></span><span data-en="available for work" data-es="disponible para trabajar">available for work</span></span>
                     </div>
                     <p class="text-mut text-base sm:text-lg leading-relaxed max-w-xl"
-                       data-en="Curious by nature and always chasing the why behind things. I build web & mobile platforms end to end — focused on clean architecture, automation and a great developer experience."
-                       data-es="Curioso por naturaleza y siempre persiguiendo el porqué de las cosas. Construyo plataformas web y móviles de punta a punta, con foco en arquitectura limpia, automatización y una gran experiencia de desarrollo.">Curious by nature and always chasing the why behind things. I build web & mobile platforms end to end — focused on clean architecture, automation and a great developer experience.</p>
+                       data-en="I build web & mobile platforms end to end — from architecture to pixels — turning messy, manual operations into clean, automated products. Physics grad turned full-stack engineer."
+                       data-es="Construyo plataformas web y móviles de punta a punta —de la arquitectura al pixel— convirtiendo operaciones manuales y caóticas en productos limpios y automatizados. Físico de formación, ingeniero full-stack de profesión.">I build web &amp; mobile platforms end to end — from architecture to pixels — turning messy, manual operations into clean, automated products. Physics grad turned full-stack engineer.</p>
                     <div class="flex flex-wrap gap-2 font-mono text-xs">
                         <span class="chip text-teal px-3 py-1 rounded-md">Python</span>
                         <span class="chip text-sky px-3 py-1 rounded-md">Django</span>
@@ -307,8 +327,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div class="lg:col-span-2 panel rounded-xl p-6 sm:p-8">
                     <div class="text-mut space-y-4 leading-relaxed">
-                        <p data-en="I'm curious by nature, always trying to understand the why behind things. I don't settle for just solving a problem — I like to go a step further and learn along the way."
-                           data-es="Soy curioso por naturaleza, siempre buscando entender el porqué de las cosas. No me conformo con resolver un problema, me gusta ir un paso más allá y aprender en el camino.">I'm curious by nature, always trying to understand the why behind things. I don't settle for just solving a problem — I like to go a step further and learn along the way.</p>
+                        <p data-en="Curiosity is my engine. I'm not satisfied with a fix that merely works — I dig into the why until the solution is elegant, robust and built to last."
+                           data-es="La curiosidad es mi motor. No me conformo con una solución que apenas funciona — indago en el porqué hasta que sea elegante, robusta y hecha para durar.">Curiosity is my engine. I'm not satisfied with a fix that merely works — I dig into the why until the solution is elegant, robust and built to last.</p>
                         <p data-en="My path started with Physics at Universidad de Concepción, where I built strong analytical skills, and continued as a Computer Engineer at Duoc UC — combining scientific thinking with software."
                            data-es="Mi camino comenzó con Física en la Universidad de Concepción, donde desarrollé sólidas habilidades analíticas, y siguió como Ingeniero Informático en Duoc UC, combinando el pensamiento científico con el software.">My path started with Physics at Universidad de Concepción, where I built strong analytical skills, and continued as a Computer Engineer at Duoc UC — combining scientific thinking with software.</p>
                         <p data-en="Today I lead digital transformation projects — from mobile apps to complex web platforms — always focused on automation and great user experience."
@@ -631,62 +651,62 @@
             </div>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
                 <a href="https://sanjaygrr.github.io/digital_creatures/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-dna"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-dna"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Digital Creatures</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/disney_logo_animation/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-wand-magic-sparkles"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-wand-magic-sparkles"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Disney Logo</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/burning_reveal/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-fire"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-fire"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Burning Reveal</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/Scorpion_Interactive_Cursor/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-arrow-pointer"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-arrow-pointer"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Scorpion Cursor</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/Periodic_Table_Animation_tcw/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-atom"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-atom"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Periodic Table</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/Life_Form_Simulation/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-seedling"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-seedling"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Life Form Sim</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/the-cube-tcw/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-cube"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-cube"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">The Cube</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/street_lamp3d/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-lightbulb"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-lightbulb"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Street Lamp 3D</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/Slowed_Horse_Animation_tcw/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-horse"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-horse"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Horse Animation</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
                 </a>
                 <a href="https://sanjaygrr.github.io/stick_hero/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-gamepad"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-gamepad"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Stick Hero</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ <span data-en="game" data-es="juego">game</span></p>
                 </a>
                 <a href="https://sanjaygrr.github.io/perfil-juego-3d/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-cubes"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-cubes"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">3D Portfolio Game</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ <span data-en="game" data-es="juego">game</span></p>
                 </a>
                 <a href="https://sanjaygrr.github.io/Gato3D/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-hashtag"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-sage animate-pulse"></span>live</span></div>
+                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-hashtag"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Gato 3D</h3>
                     <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ <span data-en="game" data-es="juego">game</span></p>
                 </a>
