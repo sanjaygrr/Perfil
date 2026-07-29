@@ -724,17 +724,30 @@
     <!-- Demos -->
     <section id="demos" class="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-12">
+            <div class="mb-8">
                 <p class="font-mono eyebrow text-sm mb-2">// live_demos</p>
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold grad-text mb-3" data-en="Creative Coding & Demos" data-es="Creative Coding y Demos">Creative Coding & Demos</h2>
-                <p class="text-mut text-lg max-w-2xl" data-en="Interactive experiments running live on GitHub Pages — click any to play." data-es="Experimentos interactivos corriendo en vivo en GitHub Pages — haz clic para jugar.">Interactive experiments running live on GitHub Pages — click any to play.</p>
+                <p class="text-mut text-lg max-w-2xl" data-en="Interactive experiments I've built — all running live on GitHub Pages, with the source on my GitHub." data-es="Experimentos interactivos hechos por mí — todos en vivo en GitHub Pages, con el código en mi GitHub.">Interactive experiments I've built — all running live on GitHub Pages, with the source on my GitHub.</p>
+            </div>
+            <!-- Featured 3D creature -->
+            <div class="panel rounded-2xl p-6 sm:p-8 mb-6 relative overflow-hidden" style="border-color: rgba(57,245,201,0.4);">
+                <div class="grid sm:grid-cols-[auto_1fr] gap-6 items-center">
+                    <div class="w-20 h-20 rounded-xl grad-bg flex items-center justify-center text-base text-4xl mx-auto sm:mx-0"><i class="fas fa-fish-fins"></i></div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-2 font-mono text-[11px]">
+                            <span class="text-lime flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live · webgl</span>
+                            <span class="chip px-2 py-0.5 rounded text-iris" data-en="featured" data-es="destacado">featured</span>
+                        </div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-txt mb-1">3D Creature — Entropic Life</h3>
+                        <p class="text-mut text-sm mb-4" data-en="A living, manta-ray-like 3D organism that swims and reacts in real time — an evolutionary ecosystem built with WebGL / Three.js." data-es="Un organismo 3D tipo mantarraya que nada y reacciona en tiempo real — un ecosistema evolutivo hecho con WebGL / Three.js.">A living, manta-ray-like 3D organism that swims and reacts in real time — an evolutionary ecosystem built with WebGL / Three.js.</p>
+                        <div class="flex flex-wrap gap-3 font-mono text-xs">
+                            <a href="https://sanjaygrr.github.io/digital_creatures/" target="_blank" class="grad-bg text-base px-4 py-2 rounded-md font-bold inline-flex items-center"><i class="fas fa-play mr-2"></i><span data-en="open demo" data-es="abrir demo">open demo</span></a>
+                            <a href="https://github.com/sanjaygrr/digital_creatures" target="_blank" class="chip px-4 py-2 rounded-md text-mut hover:text-txt transition inline-flex items-center"><i class="fab fa-github mr-2"></i>source</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
-                <a href="https://sanjaygrr.github.io/digital_creatures/" target="_blank" class="panel rounded-xl p-5 block group">
-                    <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-dna"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
-                    <h3 class="font-semibold text-txt text-sm">Digital Creatures</h3>
-                    <p class="font-mono text-xs text-mut group-hover:text-teal transition">↗ demo</p>
-                </a>
                 <a href="https://sanjaygrr.github.io/disney_logo_animation/" target="_blank" class="panel rounded-xl p-5 block group">
                     <div class="flex items-center justify-between mb-3"><div class="w-10 h-10 rounded-lg grad-bg flex items-center justify-center text-base"><i class="fas fa-wand-magic-sparkles"></i></div><span class="font-mono text-[10px] text-sage flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-lime live-dot animate-pulse"></span>live</span></div>
                     <h3 class="font-semibold text-txt text-sm">Disney Logo</h3>
